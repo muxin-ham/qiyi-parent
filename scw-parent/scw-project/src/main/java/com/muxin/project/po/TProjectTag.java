@@ -11,6 +11,12 @@ public class TProjectTag implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
+    public TProjectTag(Integer id, Integer projectid, Integer tagid) {
+        this.id = id;
+        this.projectid = projectid;
+        this.tagid = tagid;
+    }
+
     public Integer getId() {
         return id;
     }

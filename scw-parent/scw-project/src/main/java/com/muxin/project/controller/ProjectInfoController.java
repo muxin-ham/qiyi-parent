@@ -22,7 +22,7 @@ import java.util.Map;
 @RequestMapping("/project")
 @Api(tags = "项目基本功能模块（文件上传、项目信息获取等）")
 @Slf4j
-public class ProjectController {
+public class ProjectInfoController {
 
     @Autowired
     private OSSTemplate ossTemplate;
@@ -33,7 +33,7 @@ public class ProjectController {
         if (files!=null&&files.length>0){
             /*map用于存储相应信息，文件的urls*/
             Map<String,Object> urls = new HashMap<>();
-            List list = new ArrayList();
+            List<String> list = new ArrayList<String>();
             for (MultipartFile file : files) {
                 try {
                     if (!file.isEmpty()){

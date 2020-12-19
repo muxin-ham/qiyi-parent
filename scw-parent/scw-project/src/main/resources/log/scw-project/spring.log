@@ -1,75 +1,289 @@
-2020-12-17 21:49:44.853  INFO 16572 --- [main] c.muxin.project.ProjectStartApplication  : No active profile set, falling back to default profiles: default
-2020-12-17 21:49:45.837  INFO 16572 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
-2020-12-17 21:49:45.849  INFO 16572 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2020-12-17 21:49:45.915  INFO 16572 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11ms. Found 0 Redis repository interfaces.
-2020-12-17 21:49:46.161  WARN 16572 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.muxin.project.mapper]' package. Please check your configuration.
-2020-12-17 21:49:46.261  INFO 16572 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=d6d734fb-c4fd-3f74-b85e-4b824bf9702f
-2020-12-17 21:49:46.401  INFO 16572 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-12-17 21:49:46.463  INFO 16572 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-12-17 21:49:46.679  INFO 16572 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8000 (http)
-2020-12-17 21:49:46.699  INFO 16572 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-12-17 21:49:46.699  INFO 16572 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
-2020-12-17 21:49:46.701  INFO 16572 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded APR based Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
-2020-12-17 21:49:46.702  INFO 16572 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
-2020-12-17 21:49:46.702  INFO 16572 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
-2020-12-17 21:49:46.705  INFO 16572 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
-2020-12-17 21:49:46.833  INFO 16572 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2020-12-17 21:49:46.834  INFO 16572 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1965 ms
-2020-12-17 21:49:47.415  INFO 16572 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2020-12-17 21:49:47.435  WARN 16572 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
-2020-12-17 21:49:47.435  INFO 16572 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
-2020-12-17 21:49:47.438  WARN 16572 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
-2020-12-17 21:49:47.438  INFO 16572 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
-2020-12-17 21:49:47.632  INFO 16572 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-12-17 21:49:50.267  WARN 16572 --- [main] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
-2020-12-17 21:49:50.301  WARN 16572 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with default default cache. You can switch to using Caffeine cache, by adding it to the classpath.
-2020-12-17 21:49:50.331  INFO 16572 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
-2020-12-17 21:49:50.412  INFO 16572 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
-2020-12-17 21:49:51.000  INFO 16572 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
-2020-12-17 21:49:51.000  INFO 16572 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
-2020-12-17 21:49:51.103  INFO 16572 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
-2020-12-17 21:49:51.103  INFO 16572 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
-2020-12-17 21:49:51.257  INFO 16572 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2020-12-17 21:49:51.605  INFO 16572 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
-2020-12-17 21:49:51.605  INFO 16572 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
-2020-12-17 21:49:51.605  INFO 16572 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
-2020-12-17 21:49:51.605  INFO 16572 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
-2020-12-17 21:49:51.605  INFO 16572 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
-2020-12-17 21:49:51.605  INFO 16572 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
-2020-12-17 21:49:51.605  INFO 16572 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
-2020-12-17 21:49:51.904  INFO 16572 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
-2020-12-17 21:49:51.906  INFO 16572 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
-2020-12-17 21:49:51.907  INFO 16572 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
-2020-12-17 21:49:51.911  INFO 16572 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1608212991910 with initial instances count: 0
-2020-12-17 21:49:51.913  INFO 16572 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application SCW-PROJECT with eureka with status UP
-2020-12-17 21:49:51.914  INFO 16572 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1608212991914, current=UP, previous=STARTING]
-2020-12-17 21:49:51.916  INFO 16572 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SCW-PROJECT/DESKTOP-GV1RANA:SCW-PROJECT:8000: registering service...
-2020-12-17 21:49:51.916  INFO 16572 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2020-12-17 21:49:51.976  INFO 16572 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2020-12-17 21:49:52.014  INFO 16572 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2020-12-17 21:49:52.054  INFO 16572 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SCW-PROJECT/DESKTOP-GV1RANA:SCW-PROJECT:8000 - registration status: 204
-2020-12-17 21:49:52.213  INFO 16572 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8000 (http) with context path ''
-2020-12-17 21:49:52.214  INFO 16572 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8000
-2020-12-17 21:49:52.705  INFO 16572 --- [main] c.muxin.project.ProjectStartApplication  : Started ProjectStartApplication in 9.989 seconds (JVM running for 11.345)
-2020-12-17 21:50:19.440  INFO 16572 --- [http-nio-8000-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-12-17 21:50:19.440  INFO 16572 --- [http-nio-8000-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2020-12-17 21:50:19.448  INFO 16572 --- [http-nio-8000-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
-2020-12-17 21:50:21.908  INFO 16572 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
-2020-12-17 21:50:21.908  INFO 16572 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
-2020-12-17 21:50:21.908  INFO 16572 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
-2020-12-17 21:50:21.908  INFO 16572 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
-2020-12-17 21:50:21.909  INFO 16572 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
-2020-12-17 21:50:21.909  INFO 16572 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
-2020-12-17 21:50:21.909  INFO 16572 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
-2020-12-17 21:50:21.983  INFO 16572 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
-2020-12-17 21:50:48.803 ERROR 16572 --- [http-nio-8000-exec-9] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.web.multipart.MultipartException: Current request is not a multipart request] with root cause
+2020-12-18 19:01:28.332  INFO 12316 --- [main] c.muxin.project.ProjectStartApplication  : No active profile set, falling back to default profiles: default
+2020-12-18 19:01:39.612  INFO 12316 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-12-18 19:01:39.692  INFO 12316 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-12-18 19:01:40.323  INFO 12316 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 142ms. Found 0 Redis repository interfaces.
+2020-12-18 19:01:41.398  INFO 12316 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=97b43b09-706c-38ec-b912-e0ee7d119953
+2020-12-18 19:01:41.747  INFO 12316 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-18 19:01:41.966  INFO 12316 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-18 19:01:43.510  INFO 12316 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8000 (http)
+2020-12-18 19:01:43.587  INFO 12316 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-12-18 19:01:43.587  INFO 12316 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-12-18 19:01:43.589  INFO 12316 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded APR based Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2020-12-18 19:01:43.589  INFO 12316 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-12-18 19:01:43.589  INFO 12316 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-12-18 19:01:43.603  INFO 12316 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+2020-12-18 19:01:43.987  INFO 12316 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-12-18 19:01:43.987  INFO 12316 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 15535 ms
+2020-12-18 19:01:52.360  INFO 12316 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-12-18 19:01:52.451  WARN 12316 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-12-18 19:01:52.451  INFO 12316 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-12-18 19:01:52.470  WARN 12316 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-12-18 19:01:52.470  INFO 12316 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-12-18 19:01:53.440  INFO 12316 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-18 19:01:56.882  WARN 12316 --- [main] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-12-18 19:01:56.993  WARN 12316 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with default default cache. You can switch to using Caffeine cache, by adding it to the classpath.
+2020-12-18 19:01:57.049  INFO 12316 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2020-12-18 19:01:57.190  INFO 12316 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2020-12-18 19:01:58.841  INFO 12316 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2020-12-18 19:01:58.842  INFO 12316 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2020-12-18 19:01:59.163  INFO 12316 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2020-12-18 19:01:59.163  INFO 12316 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2020-12-18 19:02:00.108  INFO 12316 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-12-18 19:02:00.667  INFO 12316 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2020-12-18 19:02:00.667  INFO 12316 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2020-12-18 19:02:00.667  INFO 12316 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2020-12-18 19:02:00.667  INFO 12316 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2020-12-18 19:02:00.667  INFO 12316 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2020-12-18 19:02:00.668  INFO 12316 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2020-12-18 19:02:00.668  INFO 12316 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2020-12-18 19:02:01.371  INFO 12316 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2020-12-18 19:02:01.374  INFO 12316 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2020-12-18 19:02:01.377  INFO 12316 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-12-18 19:02:01.385  INFO 12316 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1608289321383 with initial instances count: 0
+2020-12-18 19:02:01.388  INFO 12316 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application SCW-PROJECT with eureka with status UP
+2020-12-18 19:02:01.389  INFO 12316 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1608289321389, current=UP, previous=STARTING]
+2020-12-18 19:02:01.391  INFO 12316 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SCW-PROJECT/DESKTOP-GV1RANA:SCW-PROJECT:8000: registering service...
+2020-12-18 19:02:01.392  INFO 12316 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-12-18 19:02:01.491  INFO 12316 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-12-18 19:02:01.599  INFO 12316 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-12-18 19:02:01.604  INFO 12316 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SCW-PROJECT/DESKTOP-GV1RANA:SCW-PROJECT:8000 - registration status: 204
+2020-12-18 19:02:02.067  INFO 12316 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8000 (http) with context path ''
+2020-12-18 19:02:02.069  INFO 12316 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8000
+2020-12-18 19:02:02.687  INFO 12316 --- [main] c.muxin.project.ProjectStartApplication  : Started ProjectStartApplication in 38.846 seconds (JVM running for 41.349)
+2020-12-18 19:02:31.378  INFO 12316 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2020-12-18 19:02:31.378  INFO 12316 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2020-12-18 19:02:31.378  INFO 12316 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2020-12-18 19:02:31.378  INFO 12316 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2020-12-18 19:02:31.378  INFO 12316 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2020-12-18 19:02:31.378  INFO 12316 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2020-12-18 19:02:31.378  INFO 12316 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2020-12-18 19:02:31.434  INFO 12316 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2020-12-18 19:07:00.727  INFO 12316 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-12-18 19:12:00.767  INFO 12316 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-12-18 19:17:00.773  INFO 12316 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-12-18 19:22:00.776  INFO 12316 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-12-18 19:27:00.782  INFO 12316 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-12-18 19:27:47.919  INFO 12316 --- [http-nio-8000-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-18 19:27:47.921  INFO 12316 --- [http-nio-8000-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-12-18 19:27:48.028  INFO 12316 --- [http-nio-8000-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 106 ms
+2020-12-18 19:32:00.787  INFO 12316 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-12-18 19:38:32.759  INFO 16016 --- [main] c.muxin.project.ProjectStartApplication  : No active profile set, falling back to default profiles: default
+2020-12-18 19:38:33.807  INFO 16016 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-12-18 19:38:33.809  INFO 16016 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-12-18 19:38:33.846  INFO 16016 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 20ms. Found 0 Redis repository interfaces.
+2020-12-18 19:38:34.283  INFO 16016 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=97b43b09-706c-38ec-b912-e0ee7d119953
+2020-12-18 19:38:34.446  INFO 16016 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-18 19:38:34.484  INFO 16016 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-18 19:38:34.820  INFO 16016 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8000 (http)
+2020-12-18 19:38:34.834  INFO 16016 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-12-18 19:38:34.834  INFO 16016 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-12-18 19:38:34.835  INFO 16016 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded APR based Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2020-12-18 19:38:34.836  INFO 16016 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-12-18 19:38:34.836  INFO 16016 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-12-18 19:38:34.839  INFO 16016 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+2020-12-18 19:38:34.996  INFO 16016 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-12-18 19:38:34.998  INFO 16016 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2215 ms
+2020-12-18 19:38:36.641  INFO 16016 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-12-18 19:38:36.667  WARN 16016 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-12-18 19:38:36.667  INFO 16016 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-12-18 19:38:36.671  WARN 16016 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-12-18 19:38:36.672  INFO 16016 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-12-18 19:38:36.851  INFO 16016 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-18 19:38:38.959  WARN 16016 --- [main] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-12-18 19:38:39.006  WARN 16016 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with default default cache. You can switch to using Caffeine cache, by adding it to the classpath.
+2020-12-18 19:38:39.061  INFO 16016 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2020-12-18 19:38:39.099  INFO 16016 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2020-12-18 19:38:39.682  INFO 16016 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2020-12-18 19:38:39.682  INFO 16016 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2020-12-18 19:38:39.809  INFO 16016 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2020-12-18 19:38:39.809  INFO 16016 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2020-12-18 19:38:40.208  INFO 16016 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-12-18 19:38:40.589  INFO 16016 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2020-12-18 19:38:40.589  INFO 16016 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2020-12-18 19:38:40.589  INFO 16016 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2020-12-18 19:38:40.589  INFO 16016 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2020-12-18 19:38:40.589  INFO 16016 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2020-12-18 19:38:40.590  INFO 16016 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2020-12-18 19:38:40.590  INFO 16016 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2020-12-18 19:38:40.832  INFO 16016 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2020-12-18 19:38:40.835  INFO 16016 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2020-12-18 19:38:40.837  INFO 16016 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-12-18 19:38:40.842  INFO 16016 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1608291520841 with initial instances count: 1
+2020-12-18 19:38:40.845  INFO 16016 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application SCW-PROJECT with eureka with status UP
+2020-12-18 19:38:40.846  INFO 16016 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1608291520846, current=UP, previous=STARTING]
+2020-12-18 19:38:40.848  INFO 16016 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SCW-PROJECT/DESKTOP-GV1RANA:SCW-PROJECT:8000: registering service...
+2020-12-18 19:38:40.848  INFO 16016 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-12-18 19:38:40.883  INFO 16016 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-12-18 19:38:40.898  INFO 16016 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SCW-PROJECT/DESKTOP-GV1RANA:SCW-PROJECT:8000 - registration status: 204
+2020-12-18 19:38:40.933  INFO 16016 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-12-18 19:38:41.140  INFO 16016 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8000 (http) with context path ''
+2020-12-18 19:38:41.141  INFO 16016 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8000
+2020-12-18 19:38:42.178  INFO 16016 --- [main] c.muxin.project.ProjectStartApplication  : Started ProjectStartApplication in 12.769 seconds (JVM running for 14.636)
+2020-12-18 19:43:40.596  INFO 16016 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-12-18 19:48:40.598  INFO 16016 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-12-18 19:53:40.604  INFO 16016 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-12-18 19:58:40.610  INFO 16016 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-12-18 20:03:40.612  INFO 16016 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-12-18 20:08:40.615  INFO 16016 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-12-18 20:13:40.617  INFO 16016 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-12-18 20:16:28.169  INFO 16016 --- [http-nio-8000-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-18 20:16:28.169  INFO 16016 --- [http-nio-8000-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-12-18 20:16:28.191  INFO 16016 --- [http-nio-8000-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 21 ms
+2020-12-18 20:17:00.932  INFO 8568 --- [main] c.muxin.project.ProjectStartApplication  : No active profile set, falling back to default profiles: default
+2020-12-18 20:17:02.213  INFO 8568 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-12-18 20:17:02.216  INFO 8568 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-12-18 20:17:02.272  INFO 8568 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 37ms. Found 0 Redis repository interfaces.
+2020-12-18 20:17:02.755  INFO 8568 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=97b43b09-706c-38ec-b912-e0ee7d119953
+2020-12-18 20:17:02.919  INFO 8568 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-18 20:17:02.963  INFO 8568 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-18 20:17:03.390  INFO 8568 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8000 (http)
+2020-12-18 20:17:03.401  INFO 8568 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-12-18 20:17:03.402  INFO 8568 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-12-18 20:17:03.405  INFO 8568 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded APR based Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2020-12-18 20:17:03.406  INFO 8568 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-12-18 20:17:03.406  INFO 8568 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-12-18 20:17:03.410  INFO 8568 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+2020-12-18 20:17:03.617  INFO 8568 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-12-18 20:17:03.619  INFO 8568 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2658 ms
+2020-12-18 20:17:05.603  INFO 8568 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-12-18 20:17:05.626  WARN 8568 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-12-18 20:17:05.626  INFO 8568 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-12-18 20:17:05.641  WARN 8568 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-12-18 20:17:05.641  INFO 8568 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-12-18 20:17:05.821  INFO 8568 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-18 20:17:07.820  WARN 8568 --- [main] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-12-18 20:17:07.894  WARN 8568 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with default default cache. You can switch to using Caffeine cache, by adding it to the classpath.
+2020-12-18 20:17:07.942  INFO 8568 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2020-12-18 20:17:08.019  INFO 8568 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2020-12-18 20:17:08.849  INFO 8568 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2020-12-18 20:17:08.849  INFO 8568 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2020-12-18 20:17:09.020  INFO 8568 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2020-12-18 20:17:09.020  INFO 8568 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2020-12-18 20:17:09.324  INFO 8568 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-12-18 20:17:10.104  INFO 8568 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2020-12-18 20:17:10.106  INFO 8568 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2020-12-18 20:17:10.106  INFO 8568 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2020-12-18 20:17:10.107  INFO 8568 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2020-12-18 20:17:10.107  INFO 8568 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2020-12-18 20:17:10.110  INFO 8568 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2020-12-18 20:17:10.110  INFO 8568 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2020-12-18 20:17:10.771  INFO 8568 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2020-12-18 20:17:10.774  INFO 8568 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2020-12-18 20:17:10.780  INFO 8568 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-12-18 20:17:10.785  INFO 8568 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1608293830783 with initial instances count: 2
+2020-12-18 20:17:10.788  INFO 8568 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application SCW-PROJECT with eureka with status UP
+2020-12-18 20:17:10.788  INFO 8568 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1608293830788, current=UP, previous=STARTING]
+2020-12-18 20:17:10.791  INFO 8568 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-12-18 20:17:10.813  INFO 8568 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SCW-PROJECT/DESKTOP-GV1RANA:SCW-PROJECT:8000: registering service...
+2020-12-18 20:17:10.867  INFO 8568 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SCW-PROJECT/DESKTOP-GV1RANA:SCW-PROJECT:8000 - registration status: 204
+2020-12-18 20:17:10.891  INFO 8568 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-12-18 20:17:11.100  INFO 8568 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-12-18 20:17:11.518  INFO 8568 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8000 (http) with context path ''
+2020-12-18 20:17:11.519  INFO 8568 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8000
+2020-12-18 20:17:12.009  INFO 8568 --- [main] c.muxin.project.ProjectStartApplication  : Started ProjectStartApplication in 14.425 seconds (JVM running for 16.7)
+2020-12-18 20:18:01.114  INFO 8568 --- [http-nio-8000-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-18 20:18:01.114  INFO 8568 --- [http-nio-8000-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-12-18 20:18:01.127  INFO 8568 --- [http-nio-8000-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 13 ms
+2020-12-18 20:22:10.115  INFO 8568 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-12-18 20:25:20.212  INFO 10384 --- [main] c.muxin.project.ProjectStartApplication  : No active profile set, falling back to default profiles: default
+2020-12-18 20:25:21.590  INFO 10384 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-12-18 20:25:21.593  INFO 10384 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-12-18 20:25:21.640  INFO 10384 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 25ms. Found 0 Redis repository interfaces.
+2020-12-18 20:25:22.028  INFO 10384 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=97b43b09-706c-38ec-b912-e0ee7d119953
+2020-12-18 20:25:22.192  INFO 10384 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-18 20:25:22.247  INFO 10384 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-18 20:25:22.528  INFO 10384 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8000 (http)
+2020-12-18 20:25:22.540  INFO 10384 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-12-18 20:25:22.540  INFO 10384 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-12-18 20:25:22.541  INFO 10384 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded APR based Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2020-12-18 20:25:22.542  INFO 10384 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-12-18 20:25:22.542  INFO 10384 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-12-18 20:25:22.547  INFO 10384 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+2020-12-18 20:25:22.946  INFO 10384 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-12-18 20:25:22.946  INFO 10384 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2702 ms
+2020-12-18 20:25:24.738  INFO 10384 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-12-18 20:25:24.768  WARN 10384 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-12-18 20:25:24.768  INFO 10384 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-12-18 20:25:24.772  WARN 10384 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-12-18 20:25:24.773  INFO 10384 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-12-18 20:25:24.975  INFO 10384 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-18 20:25:27.177  WARN 10384 --- [main] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-12-18 20:25:27.237  WARN 10384 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with default default cache. You can switch to using Caffeine cache, by adding it to the classpath.
+2020-12-18 20:25:27.276  INFO 10384 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2020-12-18 20:25:27.314  INFO 10384 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2020-12-18 20:25:28.089  INFO 10384 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2020-12-18 20:25:28.089  INFO 10384 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2020-12-18 20:25:28.288  INFO 10384 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2020-12-18 20:25:28.288  INFO 10384 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2020-12-18 20:25:28.593  INFO 10384 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-12-18 20:25:29.073  INFO 10384 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2020-12-18 20:25:29.073  INFO 10384 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2020-12-18 20:25:29.073  INFO 10384 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2020-12-18 20:25:29.073  INFO 10384 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2020-12-18 20:25:29.073  INFO 10384 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2020-12-18 20:25:29.073  INFO 10384 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2020-12-18 20:25:29.073  INFO 10384 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2020-12-18 20:25:29.314  INFO 10384 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2020-12-18 20:25:29.318  INFO 10384 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2020-12-18 20:25:29.320  INFO 10384 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-12-18 20:25:29.323  INFO 10384 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1608294329322 with initial instances count: 2
+2020-12-18 20:25:29.325  INFO 10384 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application SCW-PROJECT with eureka with status UP
+2020-12-18 20:25:29.326  INFO 10384 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1608294329326, current=UP, previous=STARTING]
+2020-12-18 20:25:29.331  INFO 10384 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SCW-PROJECT/DESKTOP-GV1RANA:SCW-PROJECT:8000: registering service...
+2020-12-18 20:25:29.333  INFO 10384 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-12-18 20:25:29.367  INFO 10384 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-12-18 20:25:29.377  INFO 10384 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SCW-PROJECT/DESKTOP-GV1RANA:SCW-PROJECT:8000 - registration status: 204
+2020-12-18 20:25:29.422  INFO 10384 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-12-18 20:25:29.713  WARN 10384 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType java.util.List<com.muxin.project.vo.req.ProjectReturnVo>
+2020-12-18 20:25:29.818  INFO 10384 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8000 (http) with context path ''
+2020-12-18 20:25:29.819  INFO 10384 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8000
+2020-12-18 20:25:30.351  INFO 10384 --- [main] c.muxin.project.ProjectStartApplication  : Started ProjectStartApplication in 15.205 seconds (JVM running for 17.137)
+2020-12-18 20:26:09.932  INFO 10384 --- [http-nio-8000-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-18 20:26:09.933  INFO 10384 --- [http-nio-8000-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-12-18 20:26:09.948  INFO 10384 --- [http-nio-8000-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 15 ms
+2020-12-18 20:28:45.736  INFO 10384 --- [http-nio-8000-exec-1] io.lettuce.core.EpollProvider            : Starting without optional epoll library
+2020-12-18 20:28:45.738  INFO 10384 --- [http-nio-8000-exec-1] io.lettuce.core.KqueueProvider           : Starting without optional kqueue library
+2020-12-18 20:30:29.077  INFO 10384 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-12-18 20:35:29.080  INFO 10384 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-12-18 20:39:35.698  INFO 10384 --- [http-nio-8000-exec-6] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-12-18 20:39:35.972 DEBUG 10384 --- [http-nio-8000-exec-6] c.m.p.m.TProjectMapper.insertSelective   : ==>  Preparing: insert into t_project ( name, remark, day, status, createdate ) values ( ?, ?, ?, ?, ? ) 
+2020-12-18 20:39:36.035 DEBUG 10384 --- [http-nio-8000-exec-6] c.m.p.m.TProjectMapper.insertSelective   : ==> Parameters: 七易(String), test(String), 10(Integer), 1(String), 2020-12-18 20:39:35(String)
+2020-12-18 20:39:36.667 DEBUG 10384 --- [http-nio-8000-exec-6] c.m.p.m.TProjectMapper.insertSelective   : <==    Updates: 1
+2020-12-18 20:39:36.669 DEBUG 10384 --- [http-nio-8000-exec-6] c.m.p.m.T.insertSelective!selectKey      : ==>  Preparing: select last_insert_id() 
+2020-12-18 20:39:36.669 DEBUG 10384 --- [http-nio-8000-exec-6] c.m.p.m.T.insertSelective!selectKey      : ==> Parameters: 
+2020-12-18 20:39:36.730 DEBUG 10384 --- [http-nio-8000-exec-6] c.m.p.m.T.insertSelective!selectKey      : <==      Total: 1
+2020-12-18 20:39:36.754 DEBUG 10384 --- [http-nio-8000-exec-6] c.m.p.m.T.insertSelective                : ==>  Preparing: insert into t_project_images ( projectid, imgurl, imgtype ) values ( ?, ?, ? ) 
+2020-12-18 20:39:36.756 DEBUG 10384 --- [http-nio-8000-exec-6] c.m.p.m.T.insertSelective                : ==> Parameters: 8(Integer),  https://qiy.oss-cn-beijing.aliyuncs.com/pic/001.jpg(String), 0(Byte)
+2020-12-18 20:39:36.859 DEBUG 10384 --- [http-nio-8000-exec-6] c.m.p.m.T.insertSelective                : <==    Updates: 1
+2020-12-18 20:39:36.861 DEBUG 10384 --- [http-nio-8000-exec-6] c.m.p.m.T.insertSelective                : ==>  Preparing: insert into t_project_images ( projectid, imgurl, imgtype ) values ( ?, ?, ? ) 
+2020-12-18 20:39:36.862 DEBUG 10384 --- [http-nio-8000-exec-6] c.m.p.m.T.insertSelective                : ==> Parameters: 8(Integer),  https://qiy.oss-cn-beijing.aliyuncs.com/pic/2020-12-17/1e88e18e52d14cc89ce29bb6f272bb75_9523b7391f30e924bcca79645b086e061d95f722.jpg(String), 1(Byte)
+2020-12-18 20:39:37.109 DEBUG 10384 --- [http-nio-8000-exec-6] c.m.p.m.T.insertSelective                : <==    Updates: 1
+2020-12-18 20:39:37.110 DEBUG 10384 --- [http-nio-8000-exec-6] c.m.p.m.T.insertSelective                : ==>  Preparing: insert into t_project_images ( projectid, imgurl, imgtype ) values ( ?, ?, ? ) 
+2020-12-18 20:39:37.110 DEBUG 10384 --- [http-nio-8000-exec-6] c.m.p.m.T.insertSelective                : ==> Parameters: 8(Integer), https://qiy.oss-cn-beijing.aliyuncs.com/pic/2020-12-17/99b1a812ea7148afb2541b05a983613d_79ef284443a98226a2a155459d82b9014a90eb19.jpg(String), 1(Byte)
+2020-12-18 20:39:37.418 DEBUG 10384 --- [http-nio-8000-exec-6] c.m.p.m.T.insertSelective                : <==    Updates: 1
+2020-12-18 20:39:37.419 DEBUG 10384 --- [http-nio-8000-exec-6] c.m.p.m.T.insertSelective                : ==>  Preparing: insert into t_project_tag ( projectid, tagid ) values ( ?, ? ) 
+2020-12-18 20:39:37.419 DEBUG 10384 --- [http-nio-8000-exec-6] c.m.p.m.T.insertSelective                : ==> Parameters: 8(Integer), 1(Integer)
+2020-12-18 20:39:37.731 DEBUG 10384 --- [http-nio-8000-exec-6] c.m.p.m.T.insertSelective                : <==    Updates: 1
+2020-12-18 20:39:37.732 DEBUG 10384 --- [http-nio-8000-exec-6] c.m.p.m.T.insertSelective                : ==>  Preparing: insert into t_project_tag ( projectid, tagid ) values ( ?, ? ) 
+2020-12-18 20:39:37.733 DEBUG 10384 --- [http-nio-8000-exec-6] c.m.p.m.T.insertSelective                : ==> Parameters: 8(Integer), 2(Integer)
+2020-12-18 20:39:37.883 DEBUG 10384 --- [http-nio-8000-exec-6] c.m.p.m.T.insertSelective                : <==    Updates: 1
+2020-12-18 20:39:37.884 DEBUG 10384 --- [http-nio-8000-exec-6] c.m.p.m.T.insertSelective                : ==>  Preparing: insert into t_project_type ( projectid, typeid ) values ( ?, ? ) 
+2020-12-18 20:39:37.885 DEBUG 10384 --- [http-nio-8000-exec-6] c.m.p.m.T.insertSelective                : ==> Parameters: 8(Integer), 1(Integer)
+2020-12-18 20:39:38.053 DEBUG 10384 --- [http-nio-8000-exec-6] c.m.p.m.T.insertSelective                : <==    Updates: 1
+2020-12-18 20:39:38.054 DEBUG 10384 --- [http-nio-8000-exec-6] c.m.p.m.T.insertSelective                : ==>  Preparing: insert into t_project_type ( projectid, typeid ) values ( ?, ? ) 
+2020-12-18 20:39:38.055 DEBUG 10384 --- [http-nio-8000-exec-6] c.m.p.m.T.insertSelective                : ==> Parameters: 8(Integer), 2(Integer)
+2020-12-18 20:39:38.205 DEBUG 10384 --- [http-nio-8000-exec-6] c.m.p.m.T.insertSelective                : <==    Updates: 1
+2020-12-18 20:39:38.396 ERROR 10384 --- [http-nio-8000-exec-6] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
 
-org.springframework.web.multipart.MultipartException: Current request is not a multipart request
-	at org.springframework.web.method.annotation.RequestParamMethodArgumentResolver.handleMissingValue(RequestParamMethodArgumentResolver.java:196) ~[spring-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
-	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.resolveArgument(AbstractNamedValueMethodArgumentResolver.java:114) ~[spring-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
-	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:121) ~[spring-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
-	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:167) ~[spring-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:134) ~[spring-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+java.lang.NullPointerException: null
+	at com.muxin.project.service.impl.ProjectCreateServiceImpl.saveProjectInfo(ProjectCreateServiceImpl.java:92) ~[classes/:na]
+	at com.muxin.project.controller.ProjectCreateController.submit(ProjectCreateController.java:132) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_202]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_202]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_202]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_202]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190) ~[spring-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) ~[spring-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
 	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106) ~[spring-webmvc-5.2.2.RELEASE.jar:5.2.2.RELEASE]
 	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:888) ~[spring-webmvc-5.2.2.RELEASE.jar:5.2.2.RELEASE]
 	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793) ~[spring-webmvc-5.2.2.RELEASE.jar:5.2.2.RELEASE]
@@ -115,119 +329,452 @@ org.springframework.web.multipart.MultipartException: Current request is not a m
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.29.jar:9.0.29]
 	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_202]
 
-2020-12-17 21:51:15.490 ERROR 16572 --- [http-nio-8000-exec-10] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.web.multipart.MultipartException: Current request is not a multipart request] with root cause
-
-org.springframework.web.multipart.MultipartException: Current request is not a multipart request
-	at org.springframework.web.method.annotation.RequestParamMethodArgumentResolver.handleMissingValue(RequestParamMethodArgumentResolver.java:196) ~[spring-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
-	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.resolveArgument(AbstractNamedValueMethodArgumentResolver.java:114) ~[spring-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
-	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:121) ~[spring-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
-	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:167) ~[spring-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:134) ~[spring-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106) ~[spring-webmvc-5.2.2.RELEASE.jar:5.2.2.RELEASE]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:888) ~[spring-webmvc-5.2.2.RELEASE.jar:5.2.2.RELEASE]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793) ~[spring-webmvc-5.2.2.RELEASE.jar:5.2.2.RELEASE]
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.2.2.RELEASE.jar:5.2.2.RELEASE]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040) ~[spring-webmvc-5.2.2.RELEASE.jar:5.2.2.RELEASE]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943) ~[spring-webmvc-5.2.2.RELEASE.jar:5.2.2.RELEASE]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.2.2.RELEASE.jar:5.2.2.RELEASE]
-	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.2.2.RELEASE.jar:5.2.2.RELEASE]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.2.2.RELEASE.jar:5.2.2.RELEASE]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.29.jar:9.0.29]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-9.0.29.jar:9.0.29]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526) [tomcat-embed-core-9.0.29.jar:9.0.29]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) [tomcat-embed-core-9.0.29.jar:9.0.29]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.29.jar:9.0.29]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.29.jar:9.0.29]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.29.jar:9.0.29]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367) [tomcat-embed-core-9.0.29.jar:9.0.29]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.29.jar:9.0.29]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860) [tomcat-embed-core-9.0.29.jar:9.0.29]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1591) [tomcat-embed-core-9.0.29.jar:9.0.29]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.29.jar:9.0.29]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_202]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_202]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.29.jar:9.0.29]
-	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_202]
-
-2020-12-17 21:54:51.607  INFO 16572 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2020-12-17 21:57:30.463  INFO 16468 --- [main] c.muxin.project.ProjectStartApplication  : No active profile set, falling back to default profiles: default
-2020-12-17 21:57:31.275  INFO 16468 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
-2020-12-17 21:57:31.277  INFO 16468 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2020-12-17 21:57:31.308  INFO 16468 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14ms. Found 0 Redis repository interfaces.
-2020-12-17 21:57:31.516  WARN 16468 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.muxin.project.mapper]' package. Please check your configuration.
-2020-12-17 21:57:31.598  INFO 16468 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=d6d734fb-c4fd-3f74-b85e-4b824bf9702f
-2020-12-17 21:57:31.716  INFO 16468 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-12-17 21:57:31.752  INFO 16468 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-12-17 21:57:31.998  INFO 16468 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8000 (http)
-2020-12-17 21:57:32.007  INFO 16468 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-12-17 21:57:32.008  INFO 16468 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
-2020-12-17 21:57:32.010  INFO 16468 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded APR based Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
-2020-12-17 21:57:32.010  INFO 16468 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
-2020-12-17 21:57:32.011  INFO 16468 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
-2020-12-17 21:57:32.014  INFO 16468 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
-2020-12-17 21:57:32.128  INFO 16468 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2020-12-17 21:57:32.128  INFO 16468 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1646 ms
-2020-12-17 21:57:32.591  INFO 16468 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2020-12-17 21:57:32.611  WARN 16468 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
-2020-12-17 21:57:32.612  INFO 16468 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
-2020-12-17 21:57:32.615  WARN 16468 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
-2020-12-17 21:57:32.615  INFO 16468 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
-2020-12-17 21:57:32.742  INFO 16468 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-12-17 21:57:34.995  WARN 16468 --- [main] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
-2020-12-17 21:57:35.028  WARN 16468 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with default default cache. You can switch to using Caffeine cache, by adding it to the classpath.
-2020-12-17 21:57:35.056  INFO 16468 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
-2020-12-17 21:57:35.084  INFO 16468 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
-2020-12-17 21:57:35.585  INFO 16468 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
-2020-12-17 21:57:35.586  INFO 16468 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
-2020-12-17 21:57:35.687  INFO 16468 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
-2020-12-17 21:57:35.687  INFO 16468 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
-2020-12-17 21:57:35.837  INFO 16468 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2020-12-17 21:57:36.167  INFO 16468 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
-2020-12-17 21:57:36.167  INFO 16468 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
-2020-12-17 21:57:36.167  INFO 16468 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
-2020-12-17 21:57:36.167  INFO 16468 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
-2020-12-17 21:57:36.168  INFO 16468 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
-2020-12-17 21:57:36.168  INFO 16468 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
-2020-12-17 21:57:36.168  INFO 16468 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
-2020-12-17 21:57:36.314  INFO 16468 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
-2020-12-17 21:57:36.316  INFO 16468 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
-2020-12-17 21:57:36.319  INFO 16468 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
-2020-12-17 21:57:36.323  INFO 16468 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1608213456322 with initial instances count: 1
-2020-12-17 21:57:36.324  INFO 16468 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application SCW-PROJECT with eureka with status UP
-2020-12-17 21:57:36.324  INFO 16468 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1608213456324, current=UP, previous=STARTING]
-2020-12-17 21:57:36.326  INFO 16468 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SCW-PROJECT/DESKTOP-GV1RANA:SCW-PROJECT:8000: registering service...
-2020-12-17 21:57:36.326  INFO 16468 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2020-12-17 21:57:36.351  INFO 16468 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2020-12-17 21:57:36.365  INFO 16468 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SCW-PROJECT/DESKTOP-GV1RANA:SCW-PROJECT:8000 - registration status: 204
-2020-12-17 21:57:36.390  INFO 16468 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2020-12-17 21:57:36.537  INFO 16468 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8000 (http) with context path ''
-2020-12-17 21:57:36.538  INFO 16468 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8000
-2020-12-17 21:57:37.016  INFO 16468 --- [main] c.muxin.project.ProjectStartApplication  : Started ProjectStartApplication in 8.976 seconds (JVM running for 10.036)
-2020-12-17 21:58:41.722  INFO 16468 --- [http-nio-8000-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-12-17 21:58:41.722  INFO 16468 --- [http-nio-8000-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2020-12-17 21:58:41.729  INFO 16468 --- [http-nio-8000-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
-2020-12-17 21:58:41.745  WARN 16468 --- [http-nio-8000-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpMediaTypeNotSupportedException: Content type 'application/json' not supported]
-2020-12-17 22:02:36.171  INFO 16468 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2020-12-17 22:03:48.650 DEBUG 16468 --- [http-nio-8000-exec-2] c.m.p.controller.ProjectController       : ossTemplate信息：OSSTemplate(endpoint=http://oss-cn-beijing.aliyuncs.com, bucketDomain=qiy.oss-cn-beijing.aliyuncs.com, accessKeyId=LTAI4GJJ4UBqwKS1E1Dw7toU, accessKeySecret=BKJeQ091J4qTCHVWf5U0c0Ft9wvaiY, bucketName=qiy),文件上传成功访问路径[https://qiy.oss-cn-beijing.aliyuncs.com/pic/2020-12-17/99b1a812ea7148afb2541b05a983613d_79ef284443a98226a2a155459d82b9014a90eb19.jpg, https://qiy.oss-cn-beijing.aliyuncs.com/pic/2020-12-17/1e88e18e52d14cc89ce29bb6f272bb75_9523b7391f30e924bcca79645b086e061d95f722.jpg]
-2020-12-17 22:07:36.213  INFO 16468 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2020-12-17 22:12:36.259  INFO 16468 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2020-12-17 22:17:36.262  INFO 16468 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-12-18 20:40:29.082  INFO 10384 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-12-19 14:24:11.641  INFO 4348 --- [main] c.muxin.project.ProjectStartApplication  : No active profile set, falling back to default profiles: default
+2020-12-19 14:24:13.011  INFO 4348 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-12-19 14:24:13.042  INFO 4348 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-12-19 14:24:13.096  INFO 4348 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16ms. Found 0 Redis repository interfaces.
+2020-12-19 14:24:13.491  INFO 4348 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=97b43b09-706c-38ec-b912-e0ee7d119953
+2020-12-19 14:24:13.631  INFO 4348 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-19 14:24:13.701  INFO 4348 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-19 14:24:14.061  INFO 4348 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8000 (http)
+2020-12-19 14:24:14.071  INFO 4348 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-12-19 14:24:14.071  INFO 4348 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-12-19 14:24:14.071  INFO 4348 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded APR based Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2020-12-19 14:24:14.071  INFO 4348 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-12-19 14:24:14.071  INFO 4348 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-12-19 14:24:14.071  INFO 4348 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+2020-12-19 14:24:14.242  INFO 4348 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-12-19 14:24:14.242  INFO 4348 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2581 ms
+2020-12-19 14:24:16.357  INFO 4348 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-12-19 14:24:16.377  WARN 4348 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-12-19 14:24:16.377  INFO 4348 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-12-19 14:24:16.381  WARN 4348 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-12-19 14:24:16.381  INFO 4348 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-12-19 14:24:16.557  INFO 4348 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-19 14:24:18.297  WARN 4348 --- [main] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-12-19 14:24:18.328  WARN 4348 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with default default cache. You can switch to using Caffeine cache, by adding it to the classpath.
+2020-12-19 14:24:18.360  INFO 4348 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2020-12-19 14:24:18.428  INFO 4348 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2020-12-19 14:24:19.214  INFO 4348 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2020-12-19 14:24:19.214  INFO 4348 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2020-12-19 14:24:19.312  INFO 4348 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2020-12-19 14:24:19.312  INFO 4348 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2020-12-19 14:24:19.604  INFO 4348 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-12-19 14:24:19.974  INFO 4348 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2020-12-19 14:24:19.974  INFO 4348 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2020-12-19 14:24:19.974  INFO 4348 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2020-12-19 14:24:19.974  INFO 4348 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2020-12-19 14:24:19.974  INFO 4348 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2020-12-19 14:24:19.978  INFO 4348 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2020-12-19 14:24:19.978  INFO 4348 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2020-12-19 14:24:20.446  INFO 4348 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2020-12-19 14:24:20.446  INFO 4348 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2020-12-19 14:24:20.446  INFO 4348 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-12-19 14:24:20.450  INFO 4348 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1608359060450 with initial instances count: 0
+2020-12-19 14:24:20.454  INFO 4348 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application SCW-PROJECT with eureka with status UP
+2020-12-19 14:24:20.454  INFO 4348 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1608359060454, current=UP, previous=STARTING]
+2020-12-19 14:24:20.458  INFO 4348 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SCW-PROJECT/DESKTOP-GV1RANA:SCW-PROJECT:8000: registering service...
+2020-12-19 14:24:20.458  INFO 4348 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-12-19 14:24:20.567  INFO 4348 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-12-19 14:24:20.626  INFO 4348 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-12-19 14:24:20.664  INFO 4348 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SCW-PROJECT/DESKTOP-GV1RANA:SCW-PROJECT:8000 - registration status: 204
+2020-12-19 14:24:20.850  INFO 4348 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8000 (http) with context path ''
+2020-12-19 14:24:20.850  INFO 4348 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8000
+2020-12-19 14:24:21.298  INFO 4348 --- [main] c.muxin.project.ProjectStartApplication  : Started ProjectStartApplication in 12.186 seconds (JVM running for 13.394)
+2020-12-19 14:24:50.450  INFO 4348 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2020-12-19 14:24:50.450  INFO 4348 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2020-12-19 14:24:50.450  INFO 4348 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2020-12-19 14:24:50.450  INFO 4348 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2020-12-19 14:24:50.450  INFO 4348 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2020-12-19 14:24:50.450  INFO 4348 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2020-12-19 14:24:50.450  INFO 4348 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2020-12-19 14:24:50.496  INFO 4348 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2020-12-19 14:25:53.955  INFO 4348 --- [http-nio-8000-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-19 14:25:53.955  INFO 4348 --- [http-nio-8000-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-12-19 14:25:53.967  INFO 4348 --- [http-nio-8000-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 12 ms
+2020-12-19 14:29:19.984  INFO 4348 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-12-19 14:34:19.987  INFO 4348 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-12-19 14:37:37.943  INFO 16324 --- [main] c.muxin.project.ProjectStartApplication  : No active profile set, falling back to default profiles: default
+2020-12-19 14:37:38.658  INFO 16324 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-12-19 14:37:38.662  INFO 16324 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-12-19 14:37:38.689  INFO 16324 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16ms. Found 0 Redis repository interfaces.
+2020-12-19 14:37:38.908  INFO 16324 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=97b43b09-706c-38ec-b912-e0ee7d119953
+2020-12-19 14:37:39.021  INFO 16324 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-19 14:37:39.060  INFO 16324 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-19 14:37:39.290  INFO 16324 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8000 (http)
+2020-12-19 14:37:39.298  INFO 16324 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-12-19 14:37:39.298  INFO 16324 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-12-19 14:37:39.302  INFO 16324 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded APR based Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2020-12-19 14:37:39.302  INFO 16324 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-12-19 14:37:39.302  INFO 16324 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-12-19 14:37:39.302  INFO 16324 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+2020-12-19 14:37:39.419  INFO 16324 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-12-19 14:37:39.419  INFO 16324 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1460 ms
+2020-12-19 14:37:40.473  INFO 16324 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-12-19 14:37:40.493  WARN 16324 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-12-19 14:37:40.493  INFO 16324 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-12-19 14:37:40.497  WARN 16324 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-12-19 14:37:40.497  INFO 16324 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-12-19 14:37:40.633  INFO 16324 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-19 14:37:42.269  WARN 16324 --- [main] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-12-19 14:37:42.300  WARN 16324 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with default default cache. You can switch to using Caffeine cache, by adding it to the classpath.
+2020-12-19 14:37:42.332  INFO 16324 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2020-12-19 14:37:42.355  INFO 16324 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2020-12-19 14:37:42.816  INFO 16324 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2020-12-19 14:37:42.816  INFO 16324 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2020-12-19 14:37:42.910  INFO 16324 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2020-12-19 14:37:42.910  INFO 16324 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2020-12-19 14:37:43.101  INFO 16324 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-12-19 14:37:43.409  INFO 16324 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2020-12-19 14:37:43.409  INFO 16324 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2020-12-19 14:37:43.409  INFO 16324 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2020-12-19 14:37:43.413  INFO 16324 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2020-12-19 14:37:43.413  INFO 16324 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2020-12-19 14:37:43.413  INFO 16324 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2020-12-19 14:37:43.413  INFO 16324 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2020-12-19 14:37:43.593  INFO 16324 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2020-12-19 14:37:43.597  INFO 16324 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2020-12-19 14:37:43.601  INFO 16324 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-12-19 14:37:43.605  INFO 16324 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1608359863601 with initial instances count: 1
+2020-12-19 14:37:43.605  INFO 16324 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application SCW-PROJECT with eureka with status UP
+2020-12-19 14:37:43.605  INFO 16324 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1608359863605, current=UP, previous=STARTING]
+2020-12-19 14:37:43.608  INFO 16324 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SCW-PROJECT/DESKTOP-GV1RANA:SCW-PROJECT:8000: registering service...
+2020-12-19 14:37:43.608  INFO 16324 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-12-19 14:37:43.640  INFO 16324 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-12-19 14:37:43.679  INFO 16324 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-12-19 14:37:43.683  INFO 16324 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SCW-PROJECT/DESKTOP-GV1RANA:SCW-PROJECT:8000 - registration status: 204
+2020-12-19 14:37:43.815  INFO 16324 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8000 (http) with context path ''
+2020-12-19 14:37:43.815  INFO 16324 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8000
+2020-12-19 14:37:44.261  INFO 16324 --- [main] c.muxin.project.ProjectStartApplication  : Started ProjectStartApplication in 8.832 seconds (JVM running for 9.904)
+2020-12-19 14:39:02.324  INFO 4760 --- [main] c.muxin.project.ProjectStartApplication  : No active profile set, falling back to default profiles: default
+2020-12-19 14:39:03.573  INFO 4760 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-12-19 14:39:03.578  INFO 4760 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-12-19 14:39:03.627  INFO 4760 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 28ms. Found 0 Redis repository interfaces.
+2020-12-19 14:39:04.239  INFO 4760 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=97b43b09-706c-38ec-b912-e0ee7d119953
+2020-12-19 14:39:04.518  INFO 4760 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-19 14:39:04.583  INFO 4760 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-19 14:39:04.965  INFO 4760 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8000 (http)
+2020-12-19 14:39:04.984  INFO 4760 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-12-19 14:39:04.984  INFO 4760 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-12-19 14:39:04.987  INFO 4760 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded APR based Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2020-12-19 14:39:04.990  INFO 4760 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-12-19 14:39:04.991  INFO 4760 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-12-19 14:39:04.996  INFO 4760 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+2020-12-19 14:39:05.215  INFO 4760 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-12-19 14:39:05.216  INFO 4760 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2874 ms
+2020-12-19 14:39:07.490  INFO 4760 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-12-19 14:39:07.517  WARN 4760 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-12-19 14:39:07.519  INFO 4760 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-12-19 14:39:07.526  WARN 4760 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-12-19 14:39:07.526  INFO 4760 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-12-19 14:39:07.769  INFO 4760 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-19 14:39:10.523  WARN 4760 --- [main] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-12-19 14:39:10.579  WARN 4760 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with default default cache. You can switch to using Caffeine cache, by adding it to the classpath.
+2020-12-19 14:39:10.629  INFO 4760 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2020-12-19 14:39:10.679  INFO 4760 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2020-12-19 14:39:11.395  INFO 4760 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2020-12-19 14:39:11.395  INFO 4760 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2020-12-19 14:39:11.567  INFO 4760 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2020-12-19 14:39:11.568  INFO 4760 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2020-12-19 14:39:11.907  INFO 4760 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-12-19 14:39:12.495  INFO 4760 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2020-12-19 14:39:12.495  INFO 4760 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2020-12-19 14:39:12.495  INFO 4760 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2020-12-19 14:39:12.495  INFO 4760 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2020-12-19 14:39:12.495  INFO 4760 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2020-12-19 14:39:12.495  INFO 4760 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2020-12-19 14:39:12.495  INFO 4760 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2020-12-19 14:39:12.795  INFO 4760 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2020-12-19 14:39:12.803  INFO 4760 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2020-12-19 14:39:12.807  INFO 4760 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-12-19 14:39:12.810  INFO 4760 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1608359952809 with initial instances count: 1
+2020-12-19 14:39:12.815  INFO 4760 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application SCW-PROJECT with eureka with status UP
+2020-12-19 14:39:12.816  INFO 4760 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1608359952816, current=UP, previous=STARTING]
+2020-12-19 14:39:12.820  INFO 4760 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SCW-PROJECT/DESKTOP-GV1RANA:SCW-PROJECT:8000: registering service...
+2020-12-19 14:39:12.825  INFO 4760 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-12-19 14:39:12.878  INFO 4760 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-12-19 14:39:12.893  INFO 4760 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SCW-PROJECT/DESKTOP-GV1RANA:SCW-PROJECT:8000 - registration status: 204
+2020-12-19 14:39:12.956  INFO 4760 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-12-19 14:39:13.300  WARN 4760 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType java.util.List<com.muxin.project.vo.req.ProjectReturnVo>
+2020-12-19 14:39:13.423  INFO 4760 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8000 (http) with context path ''
+2020-12-19 14:39:13.424  INFO 4760 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8000
+2020-12-19 14:39:14.105  INFO 4760 --- [main] c.muxin.project.ProjectStartApplication  : Started ProjectStartApplication in 14.205 seconds (JVM running for 15.242)
+2020-12-19 14:40:17.619  INFO 4760 --- [http-nio-8000-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-19 14:40:17.619  INFO 4760 --- [http-nio-8000-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-12-19 14:40:17.630  INFO 4760 --- [http-nio-8000-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 11 ms
+2020-12-19 14:44:12.500  INFO 4760 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-12-19 14:47:07.380  INFO 16128 --- [main] c.muxin.project.ProjectStartApplication  : No active profile set, falling back to default profiles: default
+2020-12-19 14:47:08.123  INFO 16128 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-12-19 14:47:08.125  INFO 16128 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-12-19 14:47:08.154  INFO 16128 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16ms. Found 0 Redis repository interfaces.
+2020-12-19 14:47:08.486  INFO 16128 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=97b43b09-706c-38ec-b912-e0ee7d119953
+2020-12-19 14:47:08.608  INFO 16128 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-19 14:47:08.640  INFO 16128 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-19 14:47:08.863  INFO 16128 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8000 (http)
+2020-12-19 14:47:08.871  INFO 16128 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-12-19 14:47:08.871  INFO 16128 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-12-19 14:47:08.871  INFO 16128 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded APR based Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2020-12-19 14:47:08.874  INFO 16128 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-12-19 14:47:08.875  INFO 16128 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-12-19 14:47:08.878  INFO 16128 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+2020-12-19 14:47:08.992  INFO 16128 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-12-19 14:47:08.993  INFO 16128 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1589 ms
+2020-12-19 14:47:10.058  INFO 16128 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-12-19 14:47:10.078  WARN 16128 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-12-19 14:47:10.079  INFO 16128 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-12-19 14:47:10.082  WARN 16128 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-12-19 14:47:10.083  INFO 16128 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-12-19 14:47:10.221  INFO 16128 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-19 14:47:11.891  WARN 16128 --- [main] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-12-19 14:47:11.926  WARN 16128 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with default default cache. You can switch to using Caffeine cache, by adding it to the classpath.
+2020-12-19 14:47:11.957  INFO 16128 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2020-12-19 14:47:11.984  INFO 16128 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2020-12-19 14:47:12.509  INFO 16128 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2020-12-19 14:47:12.509  INFO 16128 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2020-12-19 14:47:12.601  INFO 16128 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2020-12-19 14:47:12.602  INFO 16128 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2020-12-19 14:47:12.794  INFO 16128 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-12-19 14:47:13.089  INFO 16128 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2020-12-19 14:47:13.090  INFO 16128 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2020-12-19 14:47:13.090  INFO 16128 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2020-12-19 14:47:13.090  INFO 16128 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2020-12-19 14:47:13.090  INFO 16128 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2020-12-19 14:47:13.090  INFO 16128 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2020-12-19 14:47:13.090  INFO 16128 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2020-12-19 14:47:13.231  INFO 16128 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2020-12-19 14:47:13.233  INFO 16128 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2020-12-19 14:47:13.234  INFO 16128 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-12-19 14:47:13.239  INFO 16128 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1608360433238 with initial instances count: 1
+2020-12-19 14:47:13.240  INFO 16128 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application SCW-PROJECT with eureka with status UP
+2020-12-19 14:47:13.241  INFO 16128 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1608360433241, current=UP, previous=STARTING]
+2020-12-19 14:47:13.243  INFO 16128 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SCW-PROJECT/DESKTOP-GV1RANA:SCW-PROJECT:8000: registering service...
+2020-12-19 14:47:13.243  INFO 16128 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-12-19 14:47:13.268  INFO 16128 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-12-19 14:47:13.280  INFO 16128 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SCW-PROJECT/DESKTOP-GV1RANA:SCW-PROJECT:8000 - registration status: 204
+2020-12-19 14:47:13.302  INFO 16128 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-12-19 14:47:13.429  WARN 16128 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType java.util.List<com.muxin.project.vo.req.ProjectReturnVo>
+2020-12-19 14:47:13.494  INFO 16128 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8000 (http) with context path ''
+2020-12-19 14:47:13.494  INFO 16128 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8000
+2020-12-19 14:47:13.909  INFO 16128 --- [main] c.muxin.project.ProjectStartApplication  : Started ProjectStartApplication in 8.853 seconds (JVM running for 9.896)
+2020-12-19 14:47:38.611  INFO 16128 --- [http-nio-8000-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-19 14:47:38.611  INFO 16128 --- [http-nio-8000-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-12-19 14:47:38.617  INFO 16128 --- [http-nio-8000-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2020-12-19 14:48:24.661  INFO 11040 --- [main] c.muxin.project.ProjectStartApplication  : No active profile set, falling back to default profiles: default
+2020-12-19 14:48:25.386  INFO 11040 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-12-19 14:48:25.386  INFO 11040 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-12-19 14:48:25.413  INFO 11040 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15ms. Found 0 Redis repository interfaces.
+2020-12-19 14:48:25.648  INFO 11040 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=97b43b09-706c-38ec-b912-e0ee7d119953
+2020-12-19 14:48:25.762  INFO 11040 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-19 14:48:25.791  INFO 11040 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-19 14:48:26.018  INFO 11040 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8000 (http)
+2020-12-19 14:48:26.025  INFO 11040 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-12-19 14:48:26.025  INFO 11040 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-12-19 14:48:26.025  INFO 11040 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded APR based Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2020-12-19 14:48:26.025  INFO 11040 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-12-19 14:48:26.029  INFO 11040 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-12-19 14:48:26.029  INFO 11040 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+2020-12-19 14:48:26.141  INFO 11040 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-12-19 14:48:26.141  INFO 11040 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1465 ms
+2020-12-19 14:48:27.379  INFO 11040 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-12-19 14:48:27.399  WARN 11040 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-12-19 14:48:27.399  INFO 11040 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-12-19 14:48:27.402  WARN 11040 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-12-19 14:48:27.402  INFO 11040 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-12-19 14:48:27.524  INFO 11040 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-19 14:48:29.140  WARN 11040 --- [main] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-12-19 14:48:29.177  WARN 11040 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with default default cache. You can switch to using Caffeine cache, by adding it to the classpath.
+2020-12-19 14:48:29.204  INFO 11040 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2020-12-19 14:48:29.231  INFO 11040 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2020-12-19 14:48:29.748  INFO 11040 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2020-12-19 14:48:29.748  INFO 11040 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2020-12-19 14:48:29.852  INFO 11040 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2020-12-19 14:48:29.852  INFO 11040 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2020-12-19 14:48:30.058  INFO 11040 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-12-19 14:48:30.365  INFO 11040 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2020-12-19 14:48:30.365  INFO 11040 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2020-12-19 14:48:30.365  INFO 11040 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2020-12-19 14:48:30.365  INFO 11040 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2020-12-19 14:48:30.365  INFO 11040 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2020-12-19 14:48:30.365  INFO 11040 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2020-12-19 14:48:30.366  INFO 11040 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2020-12-19 14:48:30.508  INFO 11040 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2020-12-19 14:48:30.511  INFO 11040 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2020-12-19 14:48:30.513  INFO 11040 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-12-19 14:48:30.518  INFO 11040 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1608360510517 with initial instances count: 1
+2020-12-19 14:48:30.520  INFO 11040 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application SCW-PROJECT with eureka with status UP
+2020-12-19 14:48:30.520  INFO 11040 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1608360510520, current=UP, previous=STARTING]
+2020-12-19 14:48:30.523  INFO 11040 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SCW-PROJECT/DESKTOP-GV1RANA:SCW-PROJECT:8000: registering service...
+2020-12-19 14:48:30.524  INFO 11040 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-12-19 14:48:30.585  INFO 11040 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-12-19 14:48:30.598  INFO 11040 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SCW-PROJECT/DESKTOP-GV1RANA:SCW-PROJECT:8000 - registration status: 204
+2020-12-19 14:48:30.633  INFO 11040 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-12-19 14:48:30.762  WARN 11040 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType java.util.List<com.muxin.project.vo.req.ProjectReturnVo>
+2020-12-19 14:48:30.834  INFO 11040 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8000 (http) with context path ''
+2020-12-19 14:48:30.835  INFO 11040 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8000
+2020-12-19 14:48:31.242  INFO 11040 --- [main] c.muxin.project.ProjectStartApplication  : Started ProjectStartApplication in 8.668 seconds (JVM running for 9.733)
+2020-12-19 14:49:00.734  INFO 12140 --- [main] c.muxin.project.ProjectStartApplication  : No active profile set, falling back to default profiles: default
+2020-12-19 14:49:01.641  INFO 12140 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-12-19 14:49:01.643  INFO 12140 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-12-19 14:49:01.677  INFO 12140 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 18ms. Found 0 Redis repository interfaces.
+2020-12-19 14:49:01.999  INFO 12140 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=97b43b09-706c-38ec-b912-e0ee7d119953
+2020-12-19 14:49:02.167  INFO 12140 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-19 14:49:02.204  INFO 12140 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-19 14:49:02.490  INFO 12140 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8000 (http)
+2020-12-19 14:49:02.502  INFO 12140 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-12-19 14:49:02.503  INFO 12140 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-12-19 14:49:02.504  INFO 12140 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded APR based Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2020-12-19 14:49:02.504  INFO 12140 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-12-19 14:49:02.505  INFO 12140 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-12-19 14:49:02.509  INFO 12140 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+2020-12-19 14:49:02.652  INFO 12140 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-12-19 14:49:02.652  INFO 12140 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1893 ms
+2020-12-19 14:49:03.835  INFO 12140 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-12-19 14:49:03.855  WARN 12140 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-12-19 14:49:03.855  INFO 12140 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-12-19 14:49:03.857  WARN 12140 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-12-19 14:49:03.858  INFO 12140 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-12-19 14:49:04.010  INFO 12140 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-19 14:49:06.518  WARN 12140 --- [main] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-12-19 14:49:06.657  WARN 12140 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with default default cache. You can switch to using Caffeine cache, by adding it to the classpath.
+2020-12-19 14:49:06.728  INFO 12140 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2020-12-19 14:49:06.771  INFO 12140 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2020-12-19 14:49:07.244  INFO 12140 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2020-12-19 14:49:07.244  INFO 12140 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2020-12-19 14:49:07.333  INFO 12140 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2020-12-19 14:49:07.333  INFO 12140 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2020-12-19 14:49:07.551  INFO 12140 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-12-19 14:49:07.870  INFO 12140 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2020-12-19 14:49:07.874  INFO 12140 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2020-12-19 14:49:07.874  INFO 12140 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2020-12-19 14:49:07.874  INFO 12140 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2020-12-19 14:49:07.874  INFO 12140 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2020-12-19 14:49:07.874  INFO 12140 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2020-12-19 14:49:07.874  INFO 12140 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2020-12-19 14:49:08.016  INFO 12140 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2020-12-19 14:49:08.020  INFO 12140 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2020-12-19 14:49:08.020  INFO 12140 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-12-19 14:49:08.024  INFO 12140 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1608360548024 with initial instances count: 1
+2020-12-19 14:49:08.024  INFO 12140 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application SCW-PROJECT with eureka with status UP
+2020-12-19 14:49:08.024  INFO 12140 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1608360548024, current=UP, previous=STARTING]
+2020-12-19 14:49:08.028  INFO 12140 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SCW-PROJECT/DESKTOP-GV1RANA:SCW-PROJECT:8000: registering service...
+2020-12-19 14:49:08.028  INFO 12140 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-12-19 14:49:08.051  INFO 12140 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-12-19 14:49:08.063  INFO 12140 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SCW-PROJECT/DESKTOP-GV1RANA:SCW-PROJECT:8000 - registration status: 204
+2020-12-19 14:49:08.118  INFO 12140 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-12-19 14:49:08.355  INFO 12140 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8000 (http) with context path ''
+2020-12-19 14:49:08.356  INFO 12140 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8000
+2020-12-19 14:49:08.879  INFO 12140 --- [main] c.muxin.project.ProjectStartApplication  : Started ProjectStartApplication in 11.001 seconds (JVM running for 12.118)
+2020-12-19 14:49:12.150  INFO 12140 --- [http-nio-8000-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-19 14:49:12.150  INFO 12140 --- [http-nio-8000-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-12-19 14:49:12.166  INFO 12140 --- [http-nio-8000-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 16 ms
+2020-12-19 14:52:39.542  INFO 7348 --- [main] c.muxin.project.ProjectStartApplication  : No active profile set, falling back to default profiles: default
+2020-12-19 14:52:40.273  INFO 7348 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-12-19 14:52:40.273  INFO 7348 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-12-19 14:52:40.304  INFO 7348 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16ms. Found 0 Redis repository interfaces.
+2020-12-19 14:52:40.536  INFO 7348 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=97b43b09-706c-38ec-b912-e0ee7d119953
+2020-12-19 14:52:40.649  INFO 7348 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-19 14:52:40.680  INFO 7348 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-19 14:52:40.893  INFO 7348 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8000 (http)
+2020-12-19 14:52:40.905  INFO 7348 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-12-19 14:52:40.905  INFO 7348 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-12-19 14:52:40.905  INFO 7348 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded APR based Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2020-12-19 14:52:40.905  INFO 7348 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-12-19 14:52:40.905  INFO 7348 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-12-19 14:52:40.909  INFO 7348 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+2020-12-19 14:52:41.025  INFO 7348 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-12-19 14:52:41.025  INFO 7348 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1467 ms
+2020-12-19 14:52:42.102  INFO 7348 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-12-19 14:52:42.121  WARN 7348 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-12-19 14:52:42.121  INFO 7348 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-12-19 14:52:42.125  WARN 7348 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-12-19 14:52:42.125  INFO 7348 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-12-19 14:52:42.251  INFO 7348 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-19 14:52:43.855  WARN 7348 --- [main] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-12-19 14:52:43.891  WARN 7348 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with default default cache. You can switch to using Caffeine cache, by adding it to the classpath.
+2020-12-19 14:52:43.922  INFO 7348 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2020-12-19 14:52:43.946  INFO 7348 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2020-12-19 14:52:44.399  INFO 7348 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2020-12-19 14:52:44.399  INFO 7348 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2020-12-19 14:52:44.493  INFO 7348 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2020-12-19 14:52:44.493  INFO 7348 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2020-12-19 14:52:44.689  INFO 7348 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-12-19 14:52:44.985  INFO 7348 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2020-12-19 14:52:44.985  INFO 7348 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2020-12-19 14:52:44.985  INFO 7348 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2020-12-19 14:52:44.985  INFO 7348 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2020-12-19 14:52:44.989  INFO 7348 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2020-12-19 14:52:44.989  INFO 7348 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2020-12-19 14:52:44.989  INFO 7348 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2020-12-19 14:52:45.128  INFO 7348 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2020-12-19 14:52:45.132  INFO 7348 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2020-12-19 14:52:45.136  INFO 7348 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-12-19 14:52:45.140  INFO 7348 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1608360765136 with initial instances count: 1
+2020-12-19 14:52:45.140  INFO 7348 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application SCW-PROJECT with eureka with status UP
+2020-12-19 14:52:45.140  INFO 7348 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1608360765140, current=UP, previous=STARTING]
+2020-12-19 14:52:45.144  INFO 7348 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SCW-PROJECT/DESKTOP-GV1RANA:SCW-PROJECT:8000: registering service...
+2020-12-19 14:52:45.144  INFO 7348 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-12-19 14:52:45.171  INFO 7348 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-12-19 14:52:45.179  INFO 7348 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SCW-PROJECT/DESKTOP-GV1RANA:SCW-PROJECT:8000 - registration status: 204
+2020-12-19 14:52:45.208  INFO 7348 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-12-19 14:52:45.418  INFO 7348 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8000 (http) with context path ''
+2020-12-19 14:52:45.418  INFO 7348 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8000
+2020-12-19 14:52:45.830  INFO 7348 --- [main] c.muxin.project.ProjectStartApplication  : Started ProjectStartApplication in 8.425 seconds (JVM running for 9.434)
+2020-12-19 14:53:22.948  INFO 7348 --- [http-nio-8000-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-19 14:53:22.949  INFO 7348 --- [http-nio-8000-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-12-19 14:53:22.957  INFO 7348 --- [http-nio-8000-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2020-12-19 14:54:03.029  INFO 12132 --- [main] c.muxin.project.ProjectStartApplication  : No active profile set, falling back to default profiles: default
+2020-12-19 14:54:03.825  INFO 12132 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-12-19 14:54:03.828  INFO 12132 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-12-19 14:54:03.868  INFO 12132 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 22ms. Found 0 Redis repository interfaces.
+2020-12-19 14:54:04.142  INFO 12132 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=97b43b09-706c-38ec-b912-e0ee7d119953
+2020-12-19 14:54:04.252  INFO 12132 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-19 14:54:04.284  INFO 12132 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-19 14:54:04.474  INFO 12132 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8000 (http)
+2020-12-19 14:54:04.485  INFO 12132 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-12-19 14:54:04.485  INFO 12132 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-12-19 14:54:04.485  INFO 12132 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded APR based Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2020-12-19 14:54:04.485  INFO 12132 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-12-19 14:54:04.485  INFO 12132 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-12-19 14:54:04.489  INFO 12132 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+2020-12-19 14:54:04.611  INFO 12132 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-12-19 14:54:04.611  INFO 12132 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1566 ms
+2020-12-19 14:54:05.697  INFO 12132 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-12-19 14:54:05.720  WARN 12132 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-12-19 14:54:05.720  INFO 12132 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-12-19 14:54:05.724  WARN 12132 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-12-19 14:54:05.724  INFO 12132 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-12-19 14:54:05.867  INFO 12132 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-19 14:54:07.477  WARN 12132 --- [main] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-12-19 14:54:07.510  WARN 12132 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with default default cache. You can switch to using Caffeine cache, by adding it to the classpath.
+2020-12-19 14:54:07.537  INFO 12132 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2020-12-19 14:54:07.562  INFO 12132 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2020-12-19 14:54:08.010  INFO 12132 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2020-12-19 14:54:08.010  INFO 12132 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2020-12-19 14:54:08.114  INFO 12132 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2020-12-19 14:54:08.115  INFO 12132 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2020-12-19 14:54:08.358  INFO 12132 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-12-19 14:54:08.657  INFO 12132 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2020-12-19 14:54:08.658  INFO 12132 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2020-12-19 14:54:08.658  INFO 12132 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2020-12-19 14:54:08.658  INFO 12132 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2020-12-19 14:54:08.658  INFO 12132 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2020-12-19 14:54:08.658  INFO 12132 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2020-12-19 14:54:08.658  INFO 12132 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2020-12-19 14:54:08.840  INFO 12132 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2020-12-19 14:54:08.842  INFO 12132 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2020-12-19 14:54:08.844  INFO 12132 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-12-19 14:54:08.849  INFO 12132 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1608360848847 with initial instances count: 1
+2020-12-19 14:54:08.852  INFO 12132 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application SCW-PROJECT with eureka with status UP
+2020-12-19 14:54:08.853  INFO 12132 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1608360848853, current=UP, previous=STARTING]
+2020-12-19 14:54:08.855  INFO 12132 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SCW-PROJECT/DESKTOP-GV1RANA:SCW-PROJECT:8000: registering service...
+2020-12-19 14:54:08.855  INFO 12132 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-12-19 14:54:08.892  INFO 12132 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-12-19 14:54:08.905  INFO 12132 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SCW-PROJECT/DESKTOP-GV1RANA:SCW-PROJECT:8000 - registration status: 204
+2020-12-19 14:54:08.939  INFO 12132 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-12-19 14:54:09.150  INFO 12132 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8000 (http) with context path ''
+2020-12-19 14:54:09.151  INFO 12132 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8000
+2020-12-19 14:54:09.563  INFO 12132 --- [main] c.muxin.project.ProjectStartApplication  : Started ProjectStartApplication in 9.161 seconds (JVM running for 10.242)
+2020-12-19 14:54:56.268  INFO 12132 --- [http-nio-8000-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-19 14:54:56.268  INFO 12132 --- [http-nio-8000-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-12-19 14:54:56.275  INFO 12132 --- [http-nio-8000-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms

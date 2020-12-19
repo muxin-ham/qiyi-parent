@@ -11,6 +11,12 @@ public class TProjectType implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
+    public TProjectType(Integer id, Integer projectid, Integer typeid) {
+        this.id = id;
+        this.projectid = projectid;
+        this.typeid = typeid;
+    }
+
     public Integer getId() {
         return id;
     }

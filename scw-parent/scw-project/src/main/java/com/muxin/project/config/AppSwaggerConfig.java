@@ -13,13 +13,14 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 @Configuration
 @EnableSwagger2//开启swagger2自动生成api文档的功能
-public class AppSwggerConfig {
+public class AppSwaggerConfig {
     @Bean("项目模块")
     public Docket projectApis(){
         return new Docket(DocumentationType.SWAGGER_2)
+                .groupName("项目模块")
                 .select()
                 .apis(RequestHandlerSelectors.withClassAnnotation(Api.class))
-                .paths(PathSelectors.regex("/project.*"))
+                .paths(PathSelectors.any())
                 .build()
                 .apiInfo(apiInfo())
                 .enable(true);
