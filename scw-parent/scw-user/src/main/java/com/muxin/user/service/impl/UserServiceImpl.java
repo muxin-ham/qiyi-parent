@@ -2,8 +2,11 @@ package com.muxin.user.service.impl;
 
 import com.muxin.user.enums.UserExceptionEnum;
 import com.muxin.user.exception.UserException;
+import com.muxin.user.mapper.TMemberAddressMapper;
 import com.muxin.user.mapper.TMemberMapper;
 import com.muxin.user.po.TMember;
+import com.muxin.user.po.TMemberAddress;
+import com.muxin.user.po.TMemberAddressExample;
 import com.muxin.user.po.TMemberExample;
 import com.muxin.user.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,6 +19,9 @@ import java.util.List;
 public class UserServiceImpl implements UserService {
     @Autowired
     private TMemberMapper memberMapper;
+
+    @Autowired
+    private TMemberAddressMapper memberAddressMapper;
 
     @Override
     public void register(TMember member) {
@@ -66,5 +72,10 @@ public class UserServiceImpl implements UserService {
         return memberMapper.selectByPrimaryKey(id);
     }
 
-
+    @Override
+    public List<TMemberAddress> addressList(Integer memberId) {
+        TMemberAddressExample exp = new TMemberAddressExample();
+        exp.createCriteria().andMemberidEqualTo(memberId);
+        return memberAddressMapper.selectByExample(exp);
+    }
 }
