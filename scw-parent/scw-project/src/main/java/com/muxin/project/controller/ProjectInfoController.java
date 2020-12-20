@@ -1,12 +1,16 @@
 package com.muxin.project.controller;
 
 import com.muxin.common.response.AppResponse;
-import com.muxin.project.po.TReturn;
+import com.muxin.project.enums.ProjectImageTypeEnum;
+import com.muxin.project.po.*;
 import com.muxin.project.service.ProjectInfoService;
+import com.muxin.project.vo.resp.ProjectDetailVo;
+import com.muxin.project.vo.resp.ProjectVo;
 import com.muxin.utils.OSSTemplate;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
@@ -61,4 +65,81 @@ public class ProjectInfoController {
         List<TReturn> projectReturns = projectInfoService.getProjectReturns(projectId);
         return AppResponse.success(projectReturns);
     }
+
+    @ApiOperation("获取项目列表")
+    @RequestMapping(value = "/all",method = RequestMethod.GET)
+    public AppResponse<List<ProjectVo>> allProject(){
+        /*1、获取项目列表*/
+        List<TProject> allProjects = projectInfoService.getAllProjects();
+        /*2、创建projectVo集合*/
+        List<ProjectVo> projectVos = new ArrayList<>();
+        for (TProject project : allProjects) {
+            ProjectVo projectVo = new ProjectVo();
+            /*3、vo转po*/
+            BeanUtils.copyProperties(project,projectVo);
+            /*4、根据projectId获取图片列表*/
+            List<TProjectImages> projectImages = projectInfoService.getProjectImages(project.getId());
+            /*5、获取头图*/
+            for (TProjectImages projectImage : projectImages) {
+                if(projectImage.getImgtype()== ProjectImageTypeEnum.HEADER.getCode()){
+                    projectVo.setHeaderImage(projectImage.getImgurl());
+                }
+            }
+            /*6、将项目添加入列表*/
+            projectVos.add(projectVo);
+        }
+        return AppResponse.success(projectVos);
+    }
+
+    @ApiOperation("获取项目详细信息")
+    @RequestMapping(value = "/detail/info/{projectId}",method = RequestMethod.GET)
+    public AppResponse<ProjectDetailVo> projectInfo(@PathVariable("projectId")Integer projectId){
+        /*1、创建resp vo对象*/
+        ProjectDetailVo projectDetailVo = new ProjectDetailVo();
+        /*2、查询详细信息*/
+        TProject project = projectInfoService.projectInfo(projectId);
+        /*3、po转vo*/
+        BeanUtils.copyProperties(project,projectDetailVo);
+        /*4、根据projectId获取图片列表*/
+        List<TProjectImages> projectImages = projectInfoService.getProjectImages(project.getId());
+        /*5、头图详情图放入vo*/
+        List<String> detailsImage = projectDetailVo.getDetailsImage();
+        if(detailsImage==null){
+            detailsImage=new ArrayList<>();
+        }
+        for (TProjectImages projectImage : projectImages) {
+            if(projectImage.getImgtype()==ProjectImageTypeEnum.HEADER.getCode()){
+                projectDetailVo.setHeaderImage(projectImage.getImgurl());
+            }else{
+                detailsImage.add(projectImage.getImgurl());
+            }
+        }
+        projectDetailVo.setDetailsImage(detailsImage);
+        /*6、查询回报信息，放入vo*/
+        List<TReturn> returns = projectInfoService.getProjectReturns(projectId);
+        projectDetailVo.setProjectReturns(returns);
+        return AppResponse.success(projectDetailVo);
+    }
+
+    @ApiOperation("获取系统所有的项目标签")
+    @RequestMapping(value = "/tags",method = RequestMethod.GET)
+    public AppResponse<List<TTag>> tags() {
+        List<TTag> tags = projectInfoService.getAllProjectTags();
+        return AppResponse.success(tags);
+    }
+
+    @ApiOperation("获取系统所有的项目分类")
+    @RequestMapping(value = "/types",method = RequestMethod.GET)
+    public AppResponse<List<TType>> types() {
+        List<TType> types = projectInfoService.getProjectTypes();
+        return AppResponse.success(types);
+    }
+
+    @ApiOperation("获取回报信息")
+    @RequestMapping(value = "/returns/info/{returnId}",method = RequestMethod.GET)
+    public AppResponse<TReturn> getTReturn(@PathVariable("returnId") Integer returnId){
+        TReturn tReturn = projectInfoService.getReturnInfo(returnId);
+        return AppResponse.success(tReturn);
+    }
+
 }
