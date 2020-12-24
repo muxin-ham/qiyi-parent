@@ -96,12 +96,12 @@ public class UserLoginController {
             @ApiImplicitParam(name = "password",value = "密码",required = true)
     })
     @PostMapping("/login")
-    public AppResponse login(String username,String password){
+    public AppResponse<UserRespVo> login(String username,String password){
         /*1、查询用户信息,po*/
         TMember member = userService.login(username, password);
         if(member==null){
             /*登录失败*/
-            AppResponse<Object> fail = AppResponse.fail(null);
+            AppResponse<UserRespVo> fail = AppResponse.fail(null);
             fail.setMsg("用户名或密码错误");
             return fail;
         }
@@ -116,15 +116,4 @@ public class UserLoginController {
         return AppResponse.success(respVo);
     }
 
-    @ApiOperation("根据id查询用户信息")
-    @ApiImplicitParams(value = {
-            @ApiImplicitParam(name = "id",value = "ID",required = true),
-    })
-    @RequestMapping(value = "/findUser/{id}",method = RequestMethod.GET)
-    public AppResponse findUser(@PathVariable Integer id){
-        TMember tmember = userService.findTMemberById(id);
-        UserRespVo userRespVo = new UserRespVo();
-        BeanUtils.copyProperties(tmember,userRespVo);
-        return AppResponse.success(userRespVo);
-    }
 }

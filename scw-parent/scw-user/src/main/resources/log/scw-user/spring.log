@@ -1,193 +1,114 @@
-2020-12-20 17:53:19.383  INFO 928 --- [main] com.muxin.user.UserStartApplication      : No active profile set, falling back to default profiles: default
-2020-12-20 17:53:20.385  INFO 928 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
-2020-12-20 17:53:20.387  INFO 928 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2020-12-20 17:53:20.418  INFO 928 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13ms. Found 0 Redis repository interfaces.
-2020-12-20 17:53:20.666  INFO 928 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=344e02e9-95d0-3e18-b380-df8b30f53bde
-2020-12-20 17:53:20.778  INFO 928 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-12-20 17:53:20.810  INFO 928 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-12-20 17:53:21.079  INFO 928 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 7000 (http)
-2020-12-20 17:53:21.100  INFO 928 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-12-20 17:53:21.100  INFO 928 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
-2020-12-20 17:53:21.102  INFO 928 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded APR based Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
-2020-12-20 17:53:21.103  INFO 928 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
-2020-12-20 17:53:21.103  INFO 928 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
-2020-12-20 17:53:21.106  INFO 928 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
-2020-12-20 17:53:21.221  INFO 928 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2020-12-20 17:53:21.221  INFO 928 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1815 ms
-2020-12-20 17:53:22.339  INFO 928 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2020-12-20 17:53:22.361  WARN 928 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
-2020-12-20 17:53:22.361  INFO 928 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
-2020-12-20 17:53:22.365  WARN 928 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
-2020-12-20 17:53:22.365  INFO 928 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
-2020-12-20 17:53:22.516  INFO 928 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-12-20 17:53:24.203  WARN 928 --- [main] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
-2020-12-20 17:53:24.237  WARN 928 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with default default cache. You can switch to using Caffeine cache, by adding it to the classpath.
-2020-12-20 17:53:24.268  INFO 928 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
-2020-12-20 17:53:24.296  INFO 928 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
-2020-12-20 17:53:24.782  INFO 928 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
-2020-12-20 17:53:24.782  INFO 928 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
-2020-12-20 17:53:24.882  INFO 928 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
-2020-12-20 17:53:24.882  INFO 928 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
-2020-12-20 17:53:25.035  INFO 928 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2020-12-20 17:53:25.358  INFO 928 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
-2020-12-20 17:53:25.359  INFO 928 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
-2020-12-20 17:53:25.359  INFO 928 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
-2020-12-20 17:53:25.359  INFO 928 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
-2020-12-20 17:53:25.359  INFO 928 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
-2020-12-20 17:53:25.359  INFO 928 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
-2020-12-20 17:53:25.359  INFO 928 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
-2020-12-20 17:53:25.504  INFO 928 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
-2020-12-20 17:53:25.505  INFO 928 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
-2020-12-20 17:53:25.507  INFO 928 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
-2020-12-20 17:53:25.511  INFO 928 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1608458005510 with initial instances count: 2
-2020-12-20 17:53:25.512  INFO 928 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application SCW-USER with eureka with status UP
-2020-12-20 17:53:25.513  INFO 928 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1608458005513, current=UP, previous=STARTING]
-2020-12-20 17:53:25.515  INFO 928 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SCW-USER/DESKTOP-GV1RANA:SCW-USER:7000: registering service...
-2020-12-20 17:53:25.515  INFO 928 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2020-12-20 17:53:25.541  INFO 928 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2020-12-20 17:53:25.553  INFO 928 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SCW-USER/DESKTOP-GV1RANA:SCW-USER:7000 - registration status: 204
-2020-12-20 17:53:25.576  INFO 928 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2020-12-20 17:53:25.774  INFO 928 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 7000 (http) with context path ''
-2020-12-20 17:53:25.775  INFO 928 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 7000
-2020-12-20 17:53:26.254  INFO 928 --- [main] com.muxin.user.UserStartApplication      : Started UserStartApplication in 9.182 seconds (JVM running for 10.255)
-2020-12-20 17:54:29.561  INFO 928 --- [http-nio-7000-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-12-20 17:54:29.561  INFO 928 --- [http-nio-7000-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2020-12-20 17:54:29.567  INFO 928 --- [http-nio-7000-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
-2020-12-20 17:54:49.099  INFO 928 --- [http-nio-7000-exec-3] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
-2020-12-20 17:54:49.672 DEBUG 928 --- [http-nio-7000-exec-3] c.m.u.m.TMemberMapper.selectByExample    : ==>  Preparing: select 'true' as QUERYID, id, loginacct, userpswd, username, email, authstatus, usertype, realname, cardnum, accttype from t_member WHERE ( loginacct = ? ) 
-2020-12-20 17:54:49.770 DEBUG 928 --- [http-nio-7000-exec-3] c.m.u.m.TMemberMapper.selectByExample    : ==> Parameters: 18337268621(String)
-2020-12-20 17:54:49.831 DEBUG 928 --- [http-nio-7000-exec-3] c.m.u.m.TMemberMapper.selectByExample    : <==      Total: 1
-2020-12-20 17:54:57.156 DEBUG 928 --- [http-nio-7000-exec-5] c.m.u.m.TMemberMapper.selectByExample    : ==>  Preparing: select 'true' as QUERYID, id, loginacct, userpswd, username, email, authstatus, usertype, realname, cardnum, accttype from t_member WHERE ( loginacct = ? ) 
-2020-12-20 17:54:57.157 DEBUG 928 --- [http-nio-7000-exec-5] c.m.u.m.TMemberMapper.selectByExample    : ==> Parameters: 18337268621(String)
-2020-12-20 17:54:57.164 DEBUG 928 --- [http-nio-7000-exec-5] c.m.u.m.TMemberMapper.selectByExample    : <==      Total: 1
-2020-12-20 17:55:03.305 DEBUG 928 --- [http-nio-7000-exec-7] c.m.u.m.TMemberMapper.selectByExample    : ==>  Preparing: select 'true' as QUERYID, id, loginacct, userpswd, username, email, authstatus, usertype, realname, cardnum, accttype from t_member WHERE ( loginacct = ? ) 
-2020-12-20 17:55:03.306 DEBUG 928 --- [http-nio-7000-exec-7] c.m.u.m.TMemberMapper.selectByExample    : ==> Parameters: 18337268621(String)
-2020-12-20 17:55:03.308 DEBUG 928 --- [http-nio-7000-exec-7] c.m.u.m.TMemberMapper.selectByExample    : <==      Total: 1
-2020-12-20 17:55:03.831  INFO 928 --- [http-nio-7000-exec-7] io.lettuce.core.EpollProvider            : Starting without optional epoll library
-2020-12-20 17:55:03.832  INFO 928 --- [http-nio-7000-exec-7] io.lettuce.core.KqueueProvider           : Starting without optional kqueue library
-2020-12-20 17:58:25.362  INFO 928 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2020-12-20 18:03:25.363  INFO 928 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2020-12-20 18:08:25.365  INFO 928 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2020-12-20 18:13:25.368  INFO 928 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2020-12-20 18:18:25.369  INFO 928 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2020-12-20 18:23:25.370  INFO 928 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2020-12-20 18:28:25.372  INFO 928 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2020-12-20 18:30:30.924  INFO 5408 --- [main] com.muxin.user.UserStartApplication      : No active profile set, falling back to default profiles: default
-2020-12-20 18:30:32.121  INFO 5408 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
-2020-12-20 18:30:32.131  INFO 5408 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2020-12-20 18:30:32.178  INFO 5408 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13ms. Found 0 Redis repository interfaces.
-2020-12-20 18:30:32.578  INFO 5408 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=f5af3317-b51c-32f5-a153-3d8383ae64d2
-2020-12-20 18:30:32.719  INFO 5408 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-12-20 18:30:32.757  INFO 5408 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-12-20 18:30:33.181  INFO 5408 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 7000 (http)
-2020-12-20 18:30:33.192  INFO 5408 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-12-20 18:30:33.193  INFO 5408 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
-2020-12-20 18:30:33.194  INFO 5408 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded APR based Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
-2020-12-20 18:30:33.195  INFO 5408 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
-2020-12-20 18:30:33.195  INFO 5408 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
-2020-12-20 18:30:33.199  INFO 5408 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
-2020-12-20 18:30:33.327  INFO 5408 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2020-12-20 18:30:33.327  INFO 5408 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2386 ms
-2020-12-20 18:30:34.906  INFO 5408 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2020-12-20 18:30:34.929  WARN 5408 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
-2020-12-20 18:30:34.930  INFO 5408 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
-2020-12-20 18:30:34.934  WARN 5408 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
-2020-12-20 18:30:34.934  INFO 5408 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
-2020-12-20 18:30:35.176  INFO 5408 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-12-20 18:30:37.222  WARN 5408 --- [main] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
-2020-12-20 18:30:37.270  WARN 5408 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with default default cache. You can switch to using Caffeine cache, by adding it to the classpath.
-2020-12-20 18:30:37.304  INFO 5408 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
-2020-12-20 18:30:37.369  INFO 5408 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
-2020-12-20 18:30:38.002  INFO 5408 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
-2020-12-20 18:30:38.003  INFO 5408 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
-2020-12-20 18:30:38.133  INFO 5408 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
-2020-12-20 18:30:38.133  INFO 5408 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
-2020-12-20 18:30:38.318  INFO 5408 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2020-12-20 18:30:38.706  INFO 5408 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
-2020-12-20 18:30:38.706  INFO 5408 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
-2020-12-20 18:30:38.706  INFO 5408 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
-2020-12-20 18:30:38.706  INFO 5408 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
-2020-12-20 18:30:38.706  INFO 5408 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
-2020-12-20 18:30:38.706  INFO 5408 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
-2020-12-20 18:30:38.706  INFO 5408 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
-2020-12-20 18:30:38.914  INFO 5408 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
-2020-12-20 18:30:38.917  INFO 5408 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
-2020-12-20 18:30:38.919  INFO 5408 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
-2020-12-20 18:30:38.923  INFO 5408 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1608460238922 with initial instances count: 3
-2020-12-20 18:30:38.925  INFO 5408 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application SCW-USER with eureka with status UP
-2020-12-20 18:30:38.925  INFO 5408 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1608460238925, current=UP, previous=STARTING]
-2020-12-20 18:30:38.928  INFO 5408 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SCW-USER/DESKTOP-GV1RANA:SCW-USER:7000: registering service...
-2020-12-20 18:30:38.928  INFO 5408 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2020-12-20 18:30:38.999  INFO 5408 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SCW-USER/DESKTOP-GV1RANA:SCW-USER:7000 - registration status: 204
-2020-12-20 18:30:39.010  INFO 5408 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2020-12-20 18:30:39.044  INFO 5408 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2020-12-20 18:30:39.265  INFO 5408 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 7000 (http) with context path ''
-2020-12-20 18:30:39.266  INFO 5408 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 7000
-2020-12-20 18:30:39.755  INFO 5408 --- [main] com.muxin.user.UserStartApplication      : Started UserStartApplication in 11.029 seconds (JVM running for 12.391)
-2020-12-20 18:30:45.415  INFO 5408 --- [http-nio-7000-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-12-20 18:30:45.415  INFO 5408 --- [http-nio-7000-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2020-12-20 18:30:45.425  INFO 5408 --- [http-nio-7000-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
-2020-12-20 18:32:54.582  INFO 11280 --- [main] com.muxin.user.UserStartApplication      : No active profile set, falling back to default profiles: default
-2020-12-20 18:32:55.337  INFO 11280 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
-2020-12-20 18:32:55.340  INFO 11280 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2020-12-20 18:32:55.368  INFO 11280 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14ms. Found 0 Redis repository interfaces.
-2020-12-20 18:32:55.634  INFO 11280 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=f5af3317-b51c-32f5-a153-3d8383ae64d2
-2020-12-20 18:32:55.756  INFO 11280 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-12-20 18:32:55.789  INFO 11280 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-12-20 18:32:55.994  INFO 11280 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 7000 (http)
-2020-12-20 18:32:56.005  INFO 11280 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-12-20 18:32:56.005  INFO 11280 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
-2020-12-20 18:32:56.006  INFO 11280 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded APR based Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
-2020-12-20 18:32:56.006  INFO 11280 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
-2020-12-20 18:32:56.007  INFO 11280 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
-2020-12-20 18:32:56.010  INFO 11280 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
-2020-12-20 18:32:56.130  INFO 11280 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2020-12-20 18:32:56.130  INFO 11280 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1531 ms
-2020-12-20 18:32:57.172  INFO 11280 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2020-12-20 18:32:57.195  WARN 11280 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
-2020-12-20 18:32:57.195  INFO 11280 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
-2020-12-20 18:32:57.199  WARN 11280 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
-2020-12-20 18:32:57.199  INFO 11280 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
-2020-12-20 18:32:57.343  INFO 11280 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-12-20 18:32:59.181  WARN 11280 --- [main] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
-2020-12-20 18:32:59.215  WARN 11280 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with default default cache. You can switch to using Caffeine cache, by adding it to the classpath.
-2020-12-20 18:32:59.246  INFO 11280 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
-2020-12-20 18:32:59.274  INFO 11280 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
-2020-12-20 18:32:59.788  INFO 11280 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
-2020-12-20 18:32:59.788  INFO 11280 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
-2020-12-20 18:32:59.886  INFO 11280 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
-2020-12-20 18:32:59.887  INFO 11280 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
-2020-12-20 18:33:00.042  INFO 11280 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2020-12-20 18:33:00.376  INFO 11280 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
-2020-12-20 18:33:00.376  INFO 11280 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
-2020-12-20 18:33:00.376  INFO 11280 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
-2020-12-20 18:33:00.376  INFO 11280 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
-2020-12-20 18:33:00.376  INFO 11280 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
-2020-12-20 18:33:00.376  INFO 11280 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
-2020-12-20 18:33:00.376  INFO 11280 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
-2020-12-20 18:33:00.526  INFO 11280 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
-2020-12-20 18:33:00.529  INFO 11280 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
-2020-12-20 18:33:00.531  INFO 11280 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
-2020-12-20 18:33:00.535  INFO 11280 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1608460380533 with initial instances count: 3
-2020-12-20 18:33:00.536  INFO 11280 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application SCW-USER with eureka with status UP
-2020-12-20 18:33:00.537  INFO 11280 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1608460380537, current=UP, previous=STARTING]
-2020-12-20 18:33:00.539  INFO 11280 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SCW-USER/DESKTOP-GV1RANA:SCW-USER:7000: registering service...
-2020-12-20 18:33:00.539  INFO 11280 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2020-12-20 18:33:00.562  INFO 11280 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2020-12-20 18:33:00.573  INFO 11280 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SCW-USER/DESKTOP-GV1RANA:SCW-USER:7000 - registration status: 204
-2020-12-20 18:33:00.599  INFO 11280 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2020-12-20 18:33:00.796  INFO 11280 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 7000 (http) with context path ''
-2020-12-20 18:33:00.797  INFO 11280 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 7000
-2020-12-20 18:33:01.292  INFO 11280 --- [main] com.muxin.user.UserStartApplication      : Started UserStartApplication in 8.936 seconds (JVM running for 9.973)
-2020-12-20 18:33:11.905  INFO 11280 --- [http-nio-7000-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-12-20 18:33:11.906  INFO 11280 --- [http-nio-7000-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2020-12-20 18:33:11.915  INFO 11280 --- [http-nio-7000-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
-2020-12-20 18:33:33.681  INFO 11280 --- [http-nio-7000-exec-1] io.lettuce.core.EpollProvider            : Starting without optional epoll library
-2020-12-20 18:33:33.694  INFO 11280 --- [http-nio-7000-exec-1] io.lettuce.core.KqueueProvider           : Starting without optional kqueue library
-2020-12-20 18:33:34.842  INFO 11280 --- [http-nio-7000-exec-1] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
-2020-12-20 18:33:35.110 DEBUG 11280 --- [http-nio-7000-exec-1] c.m.u.m.T.selectByExample                : ==>  Preparing: select 'true' as QUERYID, id, memberid, address from t_member_address WHERE ( memberid = ? ) 
-2020-12-20 18:33:35.301 DEBUG 11280 --- [http-nio-7000-exec-1] c.m.u.m.T.selectByExample                : ==> Parameters: 10(Integer)
-2020-12-20 18:33:35.469 DEBUG 11280 --- [http-nio-7000-exec-1] c.m.u.m.T.selectByExample                : <==      Total: 0
-2020-12-20 18:34:42.741 DEBUG 11280 --- [http-nio-7000-exec-2] c.m.u.m.T.selectByExample                : ==>  Preparing: select 'true' as QUERYID, id, memberid, address from t_member_address WHERE ( memberid = ? ) 
-2020-12-20 18:34:42.742 DEBUG 11280 --- [http-nio-7000-exec-2] c.m.u.m.T.selectByExample                : ==> Parameters: 10(Integer)
-2020-12-20 18:34:42.744 DEBUG 11280 --- [http-nio-7000-exec-2] c.m.u.m.T.selectByExample                : <==      Total: 2
+2020-12-24 08:23:21.367  INFO 14620 --- [main] com.muxin.user.UserStartApplication      : No active profile set, falling back to default profiles: default
+2020-12-24 08:23:22.835  INFO 14620 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-12-24 08:23:22.843  INFO 14620 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-12-24 08:23:22.890  INFO 14620 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 18ms. Found 0 Redis repository interfaces.
+2020-12-24 08:23:23.218  INFO 14620 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=f5af3317-b51c-32f5-a153-3d8383ae64d2
+2020-12-24 08:23:23.343  INFO 14620 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-24 08:23:23.378  INFO 14620 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-24 08:23:23.570  INFO 14620 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 7000 (http)
+2020-12-24 08:23:23.577  INFO 14620 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-12-24 08:23:23.577  INFO 14620 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-12-24 08:23:23.577  INFO 14620 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded APR based Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2020-12-24 08:23:23.577  INFO 14620 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-12-24 08:23:23.577  INFO 14620 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-12-24 08:23:23.581  INFO 14620 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+2020-12-24 08:23:23.804  INFO 14620 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-12-24 08:23:23.808  INFO 14620 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2394 ms
+2020-12-24 08:23:25.943  INFO 14620 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-12-24 08:23:25.963  WARN 14620 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-12-24 08:23:25.963  INFO 14620 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-12-24 08:23:25.967  WARN 14620 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-12-24 08:23:25.967  INFO 14620 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-12-24 08:23:26.135  INFO 14620 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-24 08:23:27.927  WARN 14620 --- [main] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-12-24 08:23:27.962  WARN 14620 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with default default cache. You can switch to using Caffeine cache, by adding it to the classpath.
+2020-12-24 08:23:27.997  INFO 14620 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2020-12-24 08:23:28.083  INFO 14620 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2020-12-24 08:23:29.227  INFO 14620 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2020-12-24 08:23:29.227  INFO 14620 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2020-12-24 08:23:29.324  INFO 14620 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2020-12-24 08:23:29.324  INFO 14620 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2020-12-24 08:23:29.492  INFO 14620 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-12-24 08:23:29.847  INFO 14620 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2020-12-24 08:23:29.847  INFO 14620 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2020-12-24 08:23:29.847  INFO 14620 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2020-12-24 08:23:29.847  INFO 14620 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2020-12-24 08:23:29.847  INFO 14620 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2020-12-24 08:23:29.847  INFO 14620 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2020-12-24 08:23:29.847  INFO 14620 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2020-12-24 08:23:30.230  INFO 14620 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2020-12-24 08:23:30.230  INFO 14620 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2020-12-24 08:23:30.230  INFO 14620 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-12-24 08:23:30.234  INFO 14620 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1608769410234 with initial instances count: 0
+2020-12-24 08:23:30.238  INFO 14620 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application SCW-USER with eureka with status UP
+2020-12-24 08:23:30.238  INFO 14620 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1608769410238, current=UP, previous=STARTING]
+2020-12-24 08:23:30.238  INFO 14620 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SCW-USER/DESKTOP-GV1RANA:SCW-USER:7000: registering service...
+2020-12-24 08:23:30.238  INFO 14620 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-12-24 08:23:30.308  INFO 14620 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-12-24 08:23:30.343  INFO 14620 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-12-24 08:23:30.390  INFO 14620 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SCW-USER/DESKTOP-GV1RANA:SCW-USER:7000 - registration status: 204
+2020-12-24 08:23:30.589  INFO 14620 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 7000 (http) with context path ''
+2020-12-24 08:23:30.589  INFO 14620 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 7000
+2020-12-24 08:23:31.026  INFO 14620 --- [main] com.muxin.user.UserStartApplication      : Started UserStartApplication in 12.148 seconds (JVM running for 13.48)
+2020-12-24 08:24:00.234  INFO 14620 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2020-12-24 08:24:00.234  INFO 14620 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2020-12-24 08:24:00.234  INFO 14620 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2020-12-24 08:24:00.234  INFO 14620 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2020-12-24 08:24:00.234  INFO 14620 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2020-12-24 08:24:00.234  INFO 14620 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2020-12-24 08:24:00.234  INFO 14620 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2020-12-24 08:24:00.281  INFO 14620 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2020-12-24 08:28:29.854  INFO 14620 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-12-24 08:30:24.512  INFO 9232 --- [main] com.muxin.user.UserStartApplication      : No active profile set, falling back to default profiles: default
+2020-12-24 08:30:26.344  INFO 9232 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-12-24 08:30:26.348  INFO 9232 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-12-24 08:30:26.363  INFO 9232 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13ms. Found 0 Redis repository interfaces.
+2020-12-24 08:30:26.613  INFO 9232 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=f5af3317-b51c-32f5-a153-3d8383ae64d2
+2020-12-24 08:30:26.754  INFO 9232 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-24 08:30:26.801  INFO 9232 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-24 08:30:27.222  INFO 9232 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 7000 (http)
+2020-12-24 08:30:27.238  INFO 9232 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-12-24 08:30:27.238  INFO 9232 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-12-24 08:30:27.254  INFO 9232 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded APR based Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2020-12-24 08:30:27.254  INFO 9232 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-12-24 08:30:27.254  INFO 9232 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-12-24 08:30:27.254  INFO 9232 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+2020-12-24 08:30:27.488  INFO 9232 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-12-24 08:30:27.488  INFO 9232 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2957 ms
+2020-12-24 08:30:30.086  INFO 9232 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-12-24 08:30:30.176  WARN 9232 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-12-24 08:30:30.176  INFO 9232 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-12-24 08:30:30.180  WARN 9232 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-12-24 08:30:30.180  INFO 9232 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-12-24 08:30:30.422  INFO 9232 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-24 08:30:33.682  WARN 9232 --- [main] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-12-24 08:30:33.725  WARN 9232 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with default default cache. You can switch to using Caffeine cache, by adding it to the classpath.
+2020-12-24 08:30:33.756  INFO 9232 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2020-12-24 08:30:33.808  INFO 9232 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2020-12-24 08:30:34.757  INFO 9232 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2020-12-24 08:30:34.757  INFO 9232 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2020-12-24 08:30:34.980  INFO 9232 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2020-12-24 08:30:34.980  INFO 9232 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2020-12-24 08:30:35.175  INFO 9232 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-12-24 08:30:35.515  INFO 9232 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2020-12-24 08:30:35.515  INFO 9232 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2020-12-24 08:30:35.515  INFO 9232 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2020-12-24 08:30:35.515  INFO 9232 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2020-12-24 08:30:35.515  INFO 9232 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2020-12-24 08:30:35.515  INFO 9232 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2020-12-24 08:30:35.515  INFO 9232 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2020-12-24 08:30:35.683  INFO 9232 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2020-12-24 08:30:35.691  INFO 9232 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2020-12-24 08:30:35.695  INFO 9232 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-12-24 08:30:35.698  INFO 9232 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1608769835698 with initial instances count: 4
+2020-12-24 08:30:35.698  INFO 9232 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application SCW-USER with eureka with status UP
+2020-12-24 08:30:35.698  INFO 9232 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1608769835698, current=UP, previous=STARTING]
+2020-12-24 08:30:35.702  INFO 9232 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SCW-USER/DESKTOP-GV1RANA:SCW-USER:7000: registering service...
+2020-12-24 08:30:35.702  INFO 9232 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-12-24 08:30:35.741  INFO 9232 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SCW-USER/DESKTOP-GV1RANA:SCW-USER:7000 - registration status: 204
+2020-12-24 08:30:35.780  INFO 9232 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-12-24 08:30:35.823  INFO 9232 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-12-24 08:30:36.085  INFO 9232 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 7000 (http) with context path ''
+2020-12-24 08:30:36.085  INFO 9232 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 7000
+2020-12-24 08:30:36.589  INFO 9232 --- [main] com.muxin.user.UserStartApplication      : Started UserStartApplication in 15.441 seconds (JVM running for 17.867)
+2020-12-24 08:35:35.518  INFO 9232 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration

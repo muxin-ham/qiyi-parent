@@ -7,12 +7,12 @@ spring:
   datasource:
     username: root
     password: 123456
-    url: jdbc:mysql://localhost:3306/atcrowdfunding?serverTimezone=GMT%2B8&useSSL=false&useUnicode=true&characterEncoding=UTF-8
+    url: jdbc:mysql://localhost:3306/atcrowdfunding?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true
     driver-class-name: com.mysql.cj.jdbc.Driver
     type: com.alibaba.druid.pool.DruidDataSource
     filters: stat  #开启监控过滤器
   redis:
-    host: 192.168.188.135
+    host: 192.168.188.137
     port: 6379
     password: 123456
 
